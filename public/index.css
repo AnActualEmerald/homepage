@@ -1,0 +1,14 @@
+.navbar {
+    margin: 0;
+    background-color: aquamarine;
+    padding: 5pt;
+}
+
+a {
+    border-style: solid;
+    border-radius: 5pt;
+    border-width: 2pt;
+    border-color: black;
+    padding: 3pt;
+    margin-left: 3pt;
+}
