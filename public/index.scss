@@ -1,0 +1,59 @@
+.navbar {
+    margin: 0;
+    background-color: scale-color(
+        $color: green,
+        $red: 60%,
+        $green: 60%,
+        $blue: 60%
+    );
+    padding: 10pt;
+    border-radius: 5pt;
+    border-width: 1pt;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+}
+
+.links {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.links a {
+    border-style: solid;
+    border-radius: 5pt;
+    border-width: 2pt;
+    border-color: black;
+    font-size: 25pt;
+    padding: 7pt;
+    margin-left: 1.5pt;
+    margin-right: 1.5pt;
+    text-decoration: none;
+    color: black;
+}
+
+.links a:hover {
+    text-decoration: none;
+    background-color: scale-color(aqua, $red: 70%, $green: 70%, $blue: 70%);
+    filter: drop-shadow(1.5pt 1.5pt 0.25pt black);
+}
+
+.navbar img {
+    margin: 0pt;
+    margin-left: 5pt;
+}
+
+.content {
+    display: flex;
+}
+.content img {
+    margin: auto;
+    margin-top: 50pt;
+    border: 2pt solid black;
+}
+
+body {
+    background-color: lightgrey;
+}
