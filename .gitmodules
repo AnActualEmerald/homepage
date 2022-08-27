@@ -1,0 +1,12 @@
+[submodule "themes/sam"]
+	path = themes/sam
+	url = https://github.com/victoriadrake/hugo-theme-sam.git
+[submodule "less"]
+	path = less
+	url = https://github.com/4ever9/less.git
+[submodule "themes/less"]
+	path = themes/less
+	url = https://github.com/4ever9/less.git
+[submodule "themes/spectral"]
+	path = themes/spectral
+	url = https://github.com/sbruder/spectral

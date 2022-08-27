@@ -1,0 +1,5 @@
+baseURL = 'https://greenboi.me/'
+languageCode = 'en-us'
+title = 'Verdant Homeland'
+
+theme = "sam"
