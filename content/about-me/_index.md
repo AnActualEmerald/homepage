@@ -12,13 +12,13 @@ project or building gunpla, I'm usually playing League of Legends with friends.
                 
 I am a self taught developer who loves taking on side projects that 
 I usually lack the requisite skills for. Rust has been my go-to language 
-for the past few years, and in fact this website is running on a very small [rocket.rs](https://rocket.rs/) server. 
-I have also written a few things in Node.js, and am currently in the process of exploring Deno. You can see some of the things 
-I'm proud of over on the projects page.
+for exactly that kind of project for the past few years. I have also written a few things in Node.js (mostly Discord bots), 
+and am currently in the process of exploring Deno. You can see some of the things 
+I'm proud of over on the [projects]("/projects") page.
                                                                                                                     
 What first drew me to programming was a desire to make my own Minecraft mods. I watched a lot of tutorials on YouTube, got my Eclipse IDE set up, and made [this](https://www.planetminecraft.com/mod/burrito-mod-v10/), 
 a mod which added mineable beans among some other things. Sadly the source for that mod is long gone by now as I wouldn't discover version control for another few years.
-After that, I moved on to C# , and even tried wrangling C++ for a bit. Throughout highschool I hacked away on my school-issued netbook, writing 
+After that, I moved on to C#, and even tried wrangling C++ for a bit. Throughout highschool I hacked away on my school-issued netbook, writing 
 everything from a 3D renderer to a chat server and client.
                                                                                   
 Nowadays, with all of [crates.io](https://crates.io) as my disposal, I feel encouraged to explore some of the murkier areas of computing. Compilers and interpreters especially interest me,
