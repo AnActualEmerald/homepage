@@ -11,7 +11,7 @@
    </div>
    <div>
       {{ range first 10 .Site.Sections }}
-      <a href="{{.Permalink}}">{{ .Title }}</a>
+      <a href="{{.RelPermalink}}">{{ .Title }}</a>
       {{ end }}
    </div>
  </main>
