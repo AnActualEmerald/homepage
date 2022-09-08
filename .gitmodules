@@ -10,3 +10,6 @@
 [submodule "themes/spectral"]
 	path = themes/spectral
 	url = https://github.com/sbruder/spectral
+[submodule "themes/risotto"]
+	path = themes/risotto
+	url = https://github.com/joeroe/risotto

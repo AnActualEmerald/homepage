@@ -2,11 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://greenboi.me/tags/announcements/</loc>
+    <lastmod>2022-08-20T03:18:02-04:00</lastmod>
+  </url><url>
+    <loc>https://greenboi.me/tags/blog/</loc>
+    <lastmod>2022-08-20T03:18:02-04:00</lastmod>
+  </url><url>
+    <loc>https://greenboi.me/posts/grand-opening/</loc>
+    <lastmod>2022-08-20T03:18:02-04:00</lastmod>
+  </url><url>
+    <loc>https://greenboi.me/posts/</loc>
+    <lastmod>2022-08-20T03:18:02-04:00</lastmod>
+  </url><url>
+    <loc>https://greenboi.me/tags/</loc>
+    <lastmod>2022-08-20T03:18:02-04:00</lastmod>
+  </url><url>
+    <loc>https://greenboi.me/about-me/</loc>
+    <lastmod>2022-08-20T02:40:18-04:00</lastmod>
+  </url><url>
     <loc>https://greenboi.me/</loc>
     <lastmod>2022-08-20T02:04:10-04:00</lastmod>
   </url><url>
     <loc>https://greenboi.me/categories/</loc>
-  </url><url>
-    <loc>https://greenboi.me/tags/</loc>
   </url>
 </urlset>

@@ -1,5 +1,55 @@
 baseURL = 'https://greenboi.me/'
 languageCode = 'en-us'
-title = 'Verdant Homeland'
+title = "Verdant Homeland"
+author = "Emerald"
+theme = "risotto"
 
-theme = "sam"
+
+[params.theme]
+palette = "gruvbox-dark"
+mode = "dark-mode"
+
+[params.about]
+title = "The Greenzone"
+description = "Abandon hope, all ye who enter here"
+
+[[params.socialLinks]]
+icon = "fab fa-git-alt"
+title = "Gitea"
+url = "https://gitea.greenboi.me/Emerald/"
+
+[[params.socialLinks]]
+icon = "fab fa-twitter"
+title = "Twitter"
+url = "https://twitter.com/KevahnGee"
+
+[[params.socialLinks]]
+icon = "fas fa-headset"
+title = "Owncast"
+url = "https://live.greenboi.me"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/index.html"
+    weight = 10
+    
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/posts/index.html"
+    weight = 2
+    
+  [[menu.main]]
+    identifier = "discord"
+    name = "Discord"
+    url = "https://tf.greenboi.me/discord"
+    weight = 100
+    
+  # [[menu.main]]
+  #   identifier = "projects"
+  #   name = "Projects"
+  #   url = "/projects"
+  #   weight = 9
+

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Verdant Homeland</title>
-    <link>https://greenboi.me/</link>
-    <description>Recent content on Verdant Homeland</description>
+    <title>Posts on Verdant Homeland</title>
+    <link>https://greenboi.me/posts/</link>
+    <description>Recent content in Posts on Verdant Homeland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Aug 2022 02:04:10 -0400</lastBuildDate><atom:link href="https://greenboi.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Aug 2022 03:18:02 -0400</lastBuildDate><atom:link href="https://greenboi.me/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Grand Opening</title>
       <link>https://greenboi.me/posts/grand-opening/</link>
