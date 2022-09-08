@@ -6,7 +6,6 @@ projURL: "https://github.com/AnActualEmerald/papa"
 summary: "A command line mod manager"
 ---
 
-# PAPA
 ## A command line mod manager for the Northstar framework
 
 ### Context
@@ -23,9 +22,11 @@ After starting a server myself on a VPS service, I found that there was no good 
 a GUI. Technically it is possible to `curl` or `wget` the zip files that the mods come packed in, but unzipping them and moving
 everything to the right folder was a bit too tedious for me. This is where `papa` comes in
 
-> The name 'papa' is a  reference to a Titanfall 2 community inside joke where one of the Titans, Scorch, is referred to as 'Papa Scorch', owing to his bulky, heavy-set frame.
 
 ### The project
-What I was looking for was a package manager; something along the lines of Debian's `apt`. There are a number of other options, namely [viper](https://github.com/0neGal/viper) and [VTOL](https://github.com/BigSpice/VTOL),
-but both 
+What I was looking for was a package manager; something along the lines of Debian's `apt`. There are a number of other options, namely [Viper](https://github.com/0neGal/viper) and [VTOL](https://github.com/BigSpice/VTOL),
+but both involve relatively heavy GUI dependencies and, until recently, VTOL didn't officially support Linux at all. It should be mentioned that Viper does have a CLI, but it is tied to the rest of the
+main Electron application. Obviously bringing the entire Electron stack into a headless server environment is ineffecient at best.
+
+I set about thinking through the steps that would be required to install a mod.
 
