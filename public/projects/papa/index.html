@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><title>Papa &ndash; Verdant Homeland</title>
+<meta name="description" content="Abandon hope, all ye who enter here">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" />
+
+
+<link rel="stylesheet" href="css/colour/gruvbox-dark.css">
+<link rel="stylesheet" href="css/colour/dark-mode.css">
+<link rel="stylesheet" href="css/risotto.css">
+<link rel="stylesheet" href="css/custom.css">
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><h1 class="page__logo"><a href="" class="page__logo-inner">Verdant Homeland</a></h1>
+<nav class="page__nav main-nav">
+    <ul>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="/posts/index.html" title="">Blog</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="/about/index.html" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://tf.greenboi.me/discord" title="">Discord</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Papa</h1>
+    </header>
+    <div class="content__body">
+        <h2 id="a-command-line-mod-manager-for-the-northstar-framework">A command line mod manager for the Northstar framework</h2>
+<h3 id="context">Context</h3>
+<p>One of the first projects I&rsquo;ve started that was born out of a need that I had that
+wasn&rsquo;t being met by existing software. <a href="https://northstar.tf/">Northstar</a> is a modding framework for the
+game Titanfall 2, a game near and dear to my heart as one of the few games I&rsquo;ve
+played that really gets the feel of mecha right. Sadly it has been left in a state of
+limbo by the developers and publisher, leaving the servers vulnerable to hackers and DDOS attacks,
+among other things. Northstar is a project that aims to pivot the game to be as community driven as it can be
+without access to the source of the game itself. At time of writing this consists of a community server browser
+and mods for gameplay and some limited visuals (custom maps, models, and animations are very much a work in progress).</p>
+<p>After starting a server myself on a VPS service, I found that there was no good process for installing serverside mods without
+a GUI. Technically it is possible to <code>curl</code> or <code>wget</code> the zip files that the mods come packed in, but unzipping them and moving
+everything to the right folder was a bit too tedious for me. This is where <code>papa</code> comes in</p>
+<h3 id="the-project">The project</h3>
+<p>What I was looking for was a package manager; something along the lines of Debian&rsquo;s <code>apt</code>. There are a number of other options, namely <a href="https://github.com/0neGal/viper">Viper</a> and <a href="https://github.com/BigSpice/VTOL">VTOL</a>,
+but both involve relatively heavy GUI dependencies and, until recently, VTOL didn&rsquo;t officially support Linux at all. It should be mentioned that Viper does have a CLI, but it is tied to the rest of the
+main Electron application. Obviously bringing the entire Electron stack into a headless server environment is ineffecient at best.</p>
+<p>I set about thinking through the steps that would be required to install a mod.</p>
+
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+<div class="aside__about">
+    
+<h1 class="about__title">The Greenzone</h1>
+<p class="about__description">Abandon hope, all ye who enter here</p>
+</div>
+
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://gitea.greenboi.me/Emerald/" rel="me" aria-label="Gitea" title="Gitea"><i class="fab fa-git-alt" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://twitter.com/KevahnGee" rel="me" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://live.greenboi.me" rel="me" aria-label="Owncast" title="Owncast"><i class="fas fa-headset" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    
+    
+        <p>
+            
+            2022-08-27
+        </p>
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer"><p class="copyright"></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>

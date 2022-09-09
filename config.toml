@@ -47,9 +47,9 @@ url = "https://live.greenboi.me"
     url = "https://tf.greenboi.me/discord"
     weight = 100
     
-  # [[menu.main]]
-  #   identifier = "projects"
-  #   name = "Projects"
-  #   url = "/projects"
-  #   weight = 9
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects"
+    weight = 9
 
