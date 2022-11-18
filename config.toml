@@ -6,7 +6,7 @@ theme = "risotto"
 
 
 [params.theme]
-palette = "dark-mode"
+palette = "base16-dark"
 mode = "dark-mode"
 
 [params.about]
