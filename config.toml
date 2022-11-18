@@ -6,7 +6,7 @@ theme = "risotto"
 
 
 [params.theme]
-palette = "gruvbox-dark"
+palette = "base16-dark"
 mode = "dark-mode"
 
 [params.about]
@@ -19,9 +19,9 @@ title = "Gitea"
 url = "https://gitea.greenboi.me/Emerald/"
 
 [[params.socialLinks]]
-icon = "fab fa-twitter"
-title = "Twitter"
-url = "https://twitter.com/KevahnGee"
+icon = "fab fa-mastodon"
+title = "Fediverse"
+url = "https://uwu.social/@emerald"
 
 [[params.socialLinks]]
 icon = "fas fa-headset"
