@@ -3,7 +3,7 @@ title: "Grand Opening"
 date: 2022-08-20T03:18:02-04:00
 showDate: true
 draft: false
-tags: ["blog", "announcements"]
+categories: ["announcements"]
 ---
 
 # Hear ye! Hear ye!
