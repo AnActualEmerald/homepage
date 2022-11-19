@@ -1,7 +1,7 @@
 ---
 title: "Papa"
 date: 2022-08-27T01:39:45-04:00
-draft: true
+draft: false
 projURL: "https://github.com/AnActualEmerald/papa"
 summary: "A command line mod manager"
 ---
