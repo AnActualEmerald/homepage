@@ -8,3 +8,4 @@ showDate: true
 draft: true
 ---
 
+﻿I've recently been absorbed, or perhaps reabsorbed, by the most recent incarnation of the seminal 90s RTS *Total Annihilation.*
