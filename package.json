@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/anactualemerald/homepage#readme",
   "dependencies": {
-    "@tinacms/cli": "^1.5.4",
-    "tinacms": "^1.4.4"
+    "@tinacms/cli": "^1.5.5",
+    "tinacms": "^1.4.5"
   }
 }
