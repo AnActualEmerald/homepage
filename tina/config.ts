@@ -24,6 +24,14 @@ export default defineConfig({
         name: "post",
         label: "Posts",
         path: "content/posts",
+        ui: {
+          defaultItem: {
+            author: 'Emerald',
+            date: new Date().toISOString(),
+            draft: true,
+            showDate: true
+          }
+        },
         fields: [
           {
             type: "string",
@@ -31,6 +39,48 @@ export default defineConfig({
             label: "Title",
             isTitle: true,
             required: true,
+          },
+          {
+            label: 'Tags',
+            name: 'tags',
+            type: 'string',
+            list: true
+          },
+          {
+            label: 'Categories',
+            name: 'categories',
+            type: 'string',
+            list: true,
+            options: [
+              {
+                value: 'announcements',
+                label: 'Announcements'
+              },
+              {
+                value: 'reviews',
+                label: 'Reviews'
+              }
+            ]
+          },
+          {
+            name: 'author',
+            label: 'Author',
+            type: 'string',
+          },
+          {
+            label: 'Date',
+            name: 'date',
+            type: 'datetime'
+          },
+          {
+            label: 'Show Date',
+            name: 'showDate',
+            type: 'boolean'
+          },
+          {
+            name: 'draft',
+            label: 'Draft',
+            type: 'boolean'
           },
           {
             type: "rich-text",

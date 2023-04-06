@@ -1,4 +1,10 @@
 fragment PostParts on Post {
   title
+  tags
+  categories
+  author
+  date
+  showDate
+  draft
   body
 }

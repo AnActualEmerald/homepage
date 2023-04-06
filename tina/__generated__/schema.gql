@@ -83,6 +83,12 @@ union DocumentNode = Post
 
 type Post implements Node & Document {
   title: String!
+  tags: [String]
+  categories: [String]
+  author: String
+  date: String
+  showDate: Boolean
+  draft: Boolean
   body: JSON
   id: ID!
   _sys: SystemInfo!
@@ -96,6 +102,19 @@ input StringFilter {
   in: [String]
 }
 
+input DatetimeFilter {
+  after: String
+  before: String
+  eq: String
+  exists: Boolean
+  in: [String]
+}
+
+input BooleanFilter {
+  eq: Boolean
+  exists: Boolean
+}
+
 input RichTextFilter {
   startsWith: String
   eq: String
@@ -104,6 +123,12 @@ input RichTextFilter {
 
 input PostFilter {
   title: StringFilter
+  tags: StringFilter
+  categories: StringFilter
+  author: StringFilter
+  date: DatetimeFilter
+  showDate: BooleanFilter
+  draft: BooleanFilter
   body: RichTextFilter
 }
 
@@ -138,6 +163,12 @@ input DocumentMutation {
 
 input PostMutation {
   title: String
+  tags: [String]
+  categories: [String]
+  author: String
+  date: String
+  showDate: Boolean
+  draft: Boolean
   body: JSON
 }
 
