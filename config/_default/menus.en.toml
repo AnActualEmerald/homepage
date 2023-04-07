@@ -25,6 +25,11 @@
   pageRef = "projects"
   weight = 20
 
+[[main]]
+  name = "Short Stories"
+  pageRef = "stories"
+  weight = 15
+
 
 #[[main]]
 #  name = "Categories"
@@ -42,12 +47,12 @@
 # the copyright notice. Configure as per the main menu above.
 
 
-# [[footer]]
-#   name = "Tags"
-#   pageRef = "tags"
-#   weight = 10
+[[footer]]
+ name = "Tags"
+ pageRef = "tags"
+ weight = 10
 
- [[footer]]
-   name = "Categories"
-   pageRef = "categories"
-   weight = 20
+[[footer]]
+ name = "Categories"
+ pageRef = "categories"
+ weight = 20
