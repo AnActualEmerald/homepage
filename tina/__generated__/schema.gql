@@ -48,11 +48,14 @@ type Query {
   collections: [Collection!]!
   node(id: String): Node!
   document(collection: String, relativePath: String): DocumentNode!
+  story(relativePath: String): Story!
+  storyConnection(before: String, after: String, first: Float, last: Float, sort: String, filter: StoryFilter): StoryConnection!
   post(relativePath: String): Post!
   postConnection(before: String, after: String, first: Float, last: Float, sort: String, filter: PostFilter): PostConnection!
 }
 
 input DocumentFilter {
+  story: StoryFilter
   post: PostFilter
 }
 
@@ -79,12 +82,11 @@ type Collection {
   documents(before: String, after: String, first: Float, last: Float, sort: String, filter: DocumentFilter): DocumentConnection!
 }
 
-union DocumentNode = Post
+union DocumentNode = Story | Post
 
-type Post implements Node & Document {
+type Story implements Node & Document {
   title: String!
   tags: [String]
-  categories: [String]
   author: String
   date: String
   showDate: Boolean
@@ -121,6 +123,41 @@ input RichTextFilter {
   exists: Boolean
 }
 
+input StoryFilter {
+  title: StringFilter
+  tags: StringFilter
+  author: StringFilter
+  date: DatetimeFilter
+  showDate: BooleanFilter
+  draft: BooleanFilter
+  body: RichTextFilter
+}
+
+type StoryConnectionEdges {
+  cursor: String!
+  node: Story
+}
+
+type StoryConnection implements Connection {
+  pageInfo: PageInfo!
+  totalCount: Float!
+  edges: [StoryConnectionEdges]
+}
+
+type Post implements Node & Document {
+  title: String!
+  tags: [String]
+  categories: [String]
+  author: String
+  date: String
+  showDate: Boolean
+  draft: Boolean
+  body: JSON
+  id: ID!
+  _sys: SystemInfo!
+  _values: JSON!
+}
+
 input PostFilter {
   title: StringFilter
   tags: StringFilter
@@ -148,17 +185,31 @@ type Mutation {
   updateDocument(collection: String, relativePath: String!, params: DocumentUpdateMutation!): DocumentNode!
   deleteDocument(collection: String, relativePath: String!): DocumentNode!
   createDocument(collection: String, relativePath: String!, params: DocumentMutation!): DocumentNode!
+  updateStory(relativePath: String!, params: StoryMutation!): Story!
+  createStory(relativePath: String!, params: StoryMutation!): Story!
   updatePost(relativePath: String!, params: PostMutation!): Post!
   createPost(relativePath: String!, params: PostMutation!): Post!
 }
 
 input DocumentUpdateMutation {
+  story: StoryMutation
   post: PostMutation
   relativePath: String
 }
 
 input DocumentMutation {
+  story: StoryMutation
   post: PostMutation
+}
+
+input StoryMutation {
+  title: String
+  tags: [String]
+  author: String
+  date: String
+  showDate: Boolean
+  draft: Boolean
+  body: JSON
 }
 
 input PostMutation {

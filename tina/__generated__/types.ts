@@ -73,6 +73,8 @@ export type Query = {
   collections: Array<Collection>;
   node: Node;
   document: DocumentNode;
+  story: Story;
+  storyConnection: StoryConnection;
   post: Post;
   postConnection: PostConnection;
 };
@@ -99,6 +101,21 @@ export type QueryDocumentArgs = {
 };
 
 
+export type QueryStoryArgs = {
+  relativePath?: InputMaybe<Scalars['String']>;
+};
+
+
+export type QueryStoryConnectionArgs = {
+  before?: InputMaybe<Scalars['String']>;
+  after?: InputMaybe<Scalars['String']>;
+  first?: InputMaybe<Scalars['Float']>;
+  last?: InputMaybe<Scalars['Float']>;
+  sort?: InputMaybe<Scalars['String']>;
+  filter?: InputMaybe<StoryFilter>;
+};
+
+
 export type QueryPostArgs = {
   relativePath?: InputMaybe<Scalars['String']>;
 };
@@ -114,6 +131,7 @@ export type QueryPostConnectionArgs = {
 };
 
 export type DocumentFilter = {
+  story?: InputMaybe<StoryFilter>;
   post?: InputMaybe<PostFilter>;
 };
 
@@ -153,13 +171,12 @@ export type CollectionDocumentsArgs = {
   filter?: InputMaybe<DocumentFilter>;
 };
 
-export type DocumentNode = Post;
+export type DocumentNode = Story | Post;
 
-export type Post = Node & Document & {
-  __typename?: 'Post';
+export type Story = Node & Document & {
+  __typename?: 'Story';
   title: Scalars['String'];
   tags?: Maybe<Array<Maybe<Scalars['String']>>>;
-  categories?: Maybe<Array<Maybe<Scalars['String']>>>;
   author?: Maybe<Scalars['String']>;
   date?: Maybe<Scalars['String']>;
   showDate?: Maybe<Scalars['Boolean']>;
@@ -196,6 +213,44 @@ export type RichTextFilter = {
   exists?: InputMaybe<Scalars['Boolean']>;
 };
 
+export type StoryFilter = {
+  title?: InputMaybe<StringFilter>;
+  tags?: InputMaybe<StringFilter>;
+  author?: InputMaybe<StringFilter>;
+  date?: InputMaybe<DatetimeFilter>;
+  showDate?: InputMaybe<BooleanFilter>;
+  draft?: InputMaybe<BooleanFilter>;
+  body?: InputMaybe<RichTextFilter>;
+};
+
+export type StoryConnectionEdges = {
+  __typename?: 'StoryConnectionEdges';
+  cursor: Scalars['String'];
+  node?: Maybe<Story>;
+};
+
+export type StoryConnection = Connection & {
+  __typename?: 'StoryConnection';
+  pageInfo: PageInfo;
+  totalCount: Scalars['Float'];
+  edges?: Maybe<Array<Maybe<StoryConnectionEdges>>>;
+};
+
+export type Post = Node & Document & {
+  __typename?: 'Post';
+  title: Scalars['String'];
+  tags?: Maybe<Array<Maybe<Scalars['String']>>>;
+  categories?: Maybe<Array<Maybe<Scalars['String']>>>;
+  author?: Maybe<Scalars['String']>;
+  date?: Maybe<Scalars['String']>;
+  showDate?: Maybe<Scalars['Boolean']>;
+  draft?: Maybe<Scalars['Boolean']>;
+  body?: Maybe<Scalars['JSON']>;
+  id: Scalars['ID'];
+  _sys: SystemInfo;
+  _values: Scalars['JSON'];
+};
+
 export type PostFilter = {
   title?: InputMaybe<StringFilter>;
   tags?: InputMaybe<StringFilter>;
@@ -226,6 +281,8 @@ export type Mutation = {
   updateDocument: DocumentNode;
   deleteDocument: DocumentNode;
   createDocument: DocumentNode;
+  updateStory: Story;
+  createStory: Story;
   updatePost: Post;
   createPost: Post;
 };
@@ -258,6 +315,18 @@ export type MutationCreateDocumentArgs = {
 };
 
 
+export type MutationUpdateStoryArgs = {
+  relativePath: Scalars['String'];
+  params: StoryMutation;
+};
+
+
+export type MutationCreateStoryArgs = {
+  relativePath: Scalars['String'];
+  params: StoryMutation;
+};
+
+
 export type MutationUpdatePostArgs = {
   relativePath: Scalars['String'];
   params: PostMutation;
@@ -270,12 +339,24 @@ export type MutationCreatePostArgs = {
 };
 
 export type DocumentUpdateMutation = {
+  story?: InputMaybe<StoryMutation>;
   post?: InputMaybe<PostMutation>;
   relativePath?: InputMaybe<Scalars['String']>;
 };
 
 export type DocumentMutation = {
+  story?: InputMaybe<StoryMutation>;
   post?: InputMaybe<PostMutation>;
+};
+
+export type StoryMutation = {
+  title?: InputMaybe<Scalars['String']>;
+  tags?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
+  author?: InputMaybe<Scalars['String']>;
+  date?: InputMaybe<Scalars['String']>;
+  showDate?: InputMaybe<Scalars['Boolean']>;
+  draft?: InputMaybe<Scalars['Boolean']>;
+  body?: InputMaybe<Scalars['JSON']>;
 };
 
 export type PostMutation = {
@@ -289,7 +370,28 @@ export type PostMutation = {
   body?: InputMaybe<Scalars['JSON']>;
 };
 
+export type StoryPartsFragment = { __typename?: 'Story', title: string, tags?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, body?: any | null };
+
 export type PostPartsFragment = { __typename?: 'Post', title: string, tags?: Array<string | null> | null, categories?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, body?: any | null };
+
+export type StoryQueryVariables = Exact<{
+  relativePath: Scalars['String'];
+}>;
+
+
+export type StoryQuery = { __typename?: 'Query', story: { __typename?: 'Story', id: string, title: string, tags?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
+
+export type StoryConnectionQueryVariables = Exact<{
+  before?: InputMaybe<Scalars['String']>;
+  after?: InputMaybe<Scalars['String']>;
+  first?: InputMaybe<Scalars['Float']>;
+  last?: InputMaybe<Scalars['Float']>;
+  sort?: InputMaybe<Scalars['String']>;
+  filter?: InputMaybe<StoryFilter>;
+}>;
+
+
+export type StoryConnectionQuery = { __typename?: 'Query', storyConnection: { __typename?: 'StoryConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'StoryConnectionEdges', cursor: string, node?: { __typename?: 'Story', id: string, title: string, tags?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
 
 export type PostQueryVariables = Exact<{
   relativePath: Scalars['String'];
@@ -310,6 +412,17 @@ export type PostConnectionQueryVariables = Exact<{
 
 export type PostConnectionQuery = { __typename?: 'Query', postConnection: { __typename?: 'PostConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'PostConnectionEdges', cursor: string, node?: { __typename?: 'Post', id: string, title: string, tags?: Array<string | null> | null, categories?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
 
+export const StoryPartsFragmentDoc = gql`
+    fragment StoryParts on Story {
+  title
+  tags
+  author
+  date
+  showDate
+  draft
+  body
+}
+    `;
 export const PostPartsFragmentDoc = gql`
     fragment PostParts on Post {
   title
@@ -322,6 +435,61 @@ export const PostPartsFragmentDoc = gql`
   body
 }
     `;
+export const StoryDocument = gql`
+    query story($relativePath: String!) {
+  story(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...StoryParts
+  }
+}
+    ${StoryPartsFragmentDoc}`;
+export const StoryConnectionDocument = gql`
+    query storyConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: StoryFilter) {
+  storyConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...StoryParts
+      }
+    }
+  }
+}
+    ${StoryPartsFragmentDoc}`;
 export const PostDocument = gql`
     query post($relativePath: String!) {
   post(relativePath: $relativePath) {
@@ -380,7 +548,13 @@ export const PostConnectionDocument = gql`
 export type Requester<C= {}> = <R, V>(doc: DocumentNode, vars?: V, options?: C) => Promise<R>
   export function getSdk<C>(requester: Requester<C>) {
     return {
-      post(variables: PostQueryVariables, options?: C): Promise<{data: PostQuery, variables: PostQueryVariables, query: string}> {
+      story(variables: StoryQueryVariables, options?: C): Promise<{data: StoryQuery, variables: StoryQueryVariables, query: string}> {
+        return requester<{data: StoryQuery, variables: StoryQueryVariables, query: string}, StoryQueryVariables>(StoryDocument, variables, options);
+      },
+    storyConnection(variables?: StoryConnectionQueryVariables, options?: C): Promise<{data: StoryConnectionQuery, variables: StoryConnectionQueryVariables, query: string}> {
+        return requester<{data: StoryConnectionQuery, variables: StoryConnectionQueryVariables, query: string}, StoryConnectionQueryVariables>(StoryConnectionDocument, variables, options);
+      },
+    post(variables: PostQueryVariables, options?: C): Promise<{data: PostQuery, variables: PostQueryVariables, query: string}> {
         return requester<{data: PostQuery, variables: PostQueryVariables, query: string}, PostQueryVariables>(PostDocument, variables, options);
       },
     postConnection(variables?: PostConnectionQueryVariables, options?: C): Promise<{data: PostConnectionQuery, variables: PostConnectionQueryVariables, query: string}> {

@@ -21,6 +21,61 @@ export default defineConfig({
   schema: {
     collections: [
       {
+        name: "story",
+        label: "Stories",
+        path: "content/stories",
+        ui: {
+          defaultItem: {
+            author: 'Emerald',
+            date: new Date().toISOString(),
+            draft: true,
+            showDate: false
+          }
+        },
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            label: 'Tags',
+            name: 'tags',
+            type: 'string',
+            list: true
+          },
+          {
+            name: 'author',
+            label: 'Author',
+            type: 'string',
+          },
+          {
+            label: 'Date',
+            name: 'date',
+            type: 'datetime'
+          },
+          {
+            label: 'Show Date',
+            name: 'showDate',
+            type: 'boolean'
+          },
+          {
+            name: 'draft',
+            label: 'Draft',
+            type: 'boolean'
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Body",
+            isBody: true,
+          },
+        
+        ]
+      },
+      {
         name: "post",
         label: "Posts",
         path: "content/posts",

@@ -1,3 +1,13 @@
+fragment StoryParts on Story {
+  title
+  tags
+  author
+  date
+  showDate
+  draft
+  body
+}
+
 fragment PostParts on Post {
   title
   tags
