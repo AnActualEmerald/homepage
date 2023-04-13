@@ -6,6 +6,9 @@ author: Emerald
 date: '2023-04-06T20:27:55.230Z'
 showDate: true
 draft: true
+tags:
+  - strategy games
+  - video games
 ---
 
-﻿I've recently been absorbed, or perhaps reabsorbed, by the most recent incarnation of the seminal 90s RTS [*Total Annihilation. *Beyond All Reason](https://www.beyondallreason.info/)
+[Beyond all Reason](https://beyondallreason.info) is the most recent incarnation of the classic large-scale RTS *Total Annihilation. *
