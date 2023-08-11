@@ -84,7 +84,8 @@ export default defineConfig({
             author: 'Emerald',
             date: new Date().toISOString(),
             draft: true,
-            showDate: true
+            showDate: true,
+            showComments: true
           }
         },
         fields: [
@@ -135,6 +136,11 @@ export default defineConfig({
           {
             name: 'draft',
             label: 'Draft',
+            type: 'boolean'
+          },
+          {
+            name: 'showComments',
+            label: 'Show Comments',
             type: 'boolean'
           },
           {
