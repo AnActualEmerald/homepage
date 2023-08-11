@@ -16,5 +16,6 @@ fragment PostParts on Post {
   date
   showDate
   draft
+  showComments
   body
 }

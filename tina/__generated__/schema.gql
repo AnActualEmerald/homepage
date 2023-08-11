@@ -17,6 +17,11 @@ type SystemInfo {
   collection: Collection!
 }
 
+type Folder {
+  name: String!
+  path: String!
+}
+
 type PageInfo {
   hasPreviousPage: Boolean!
   hasNextPage: Boolean!
@@ -79,10 +84,10 @@ type Collection {
   matches: String
   templates: [JSON]
   fields: [JSON]
-  documents(before: String, after: String, first: Float, last: Float, sort: String, filter: DocumentFilter): DocumentConnection!
+  documents(before: String, after: String, first: Float, last: Float, sort: String, filter: DocumentFilter, folder: String): DocumentConnection!
 }
 
-union DocumentNode = Story | Post
+union DocumentNode = Story | Post | Folder
 
 type Story implements Node & Document {
   title: String!
@@ -152,6 +157,7 @@ type Post implements Node & Document {
   date: String
   showDate: Boolean
   draft: Boolean
+  showComments: Boolean
   body: JSON
   id: ID!
   _sys: SystemInfo!
@@ -166,6 +172,7 @@ input PostFilter {
   date: DatetimeFilter
   showDate: BooleanFilter
   draft: BooleanFilter
+  showComments: BooleanFilter
   body: RichTextFilter
 }
 
@@ -220,6 +227,7 @@ input PostMutation {
   date: String
   showDate: Boolean
   draft: Boolean
+  showComments: Boolean
   body: JSON
 }
 
