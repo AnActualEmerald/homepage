@@ -2,27 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://greenboi.me/tags/announcements/</loc>
-    <lastmod>2022-08-20T03:18:02-04:00</lastmod>
+    <loc>https://greenboi.me/posts/bar-is-fun-beyond-all-reason/</loc>
+    <lastmod>2023-04-06T20:27:55+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>https://greenboi.me/tags/blog/</loc>
+    <loc>https://greenboi.me/categories/</loc>
+    <lastmod>2023-04-06T20:27:55+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://greenboi.me/posts/</loc>
+    <lastmod>2023-04-06T20:27:55+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://greenboi.me/categories/reviews/</loc>
+    <lastmod>2023-04-06T20:27:55+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://greenboi.me/tags/strategy-games/</loc>
+    <lastmod>2023-04-06T20:27:55+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://greenboi.me/tags/</loc>
+    <lastmod>2023-04-06T20:27:55+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://greenboi.me/tags/video-games/</loc>
+    <lastmod>2023-04-06T20:27:55+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://greenboi.me/posts/scarlet_violet_impressions/</loc>
+    <lastmod>2022-11-18T15:45:08-05:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://greenboi.me/projects/papa/</loc>
+    <lastmod>2022-08-27T01:39:45-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://greenboi.me/projects/</loc>
+    <lastmod>2022-08-27T01:04:05-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://greenboi.me/categories/announcements/</loc>
     <lastmod>2022-08-20T03:18:02-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://greenboi.me/posts/grand-opening/</loc>
     <lastmod>2022-08-20T03:18:02-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>https://greenboi.me/posts/</loc>
-    <lastmod>2022-08-20T03:18:02-04:00</lastmod>
-  </url><url>
-    <loc>https://greenboi.me/tags/</loc>
-    <lastmod>2022-08-20T03:18:02-04:00</lastmod>
-  </url><url>
-    <loc>https://greenboi.me/about-me/</loc>
+    <loc>https://greenboi.me/about/</loc>
     <lastmod>2022-08-20T02:40:18-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://greenboi.me/</loc>
     <lastmod>2022-08-20T02:04:10-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>https://greenboi.me/categories/</loc>
+    <loc>https://greenboi.me/stories/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://greenboi.me/authors/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://greenboi.me/series/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
