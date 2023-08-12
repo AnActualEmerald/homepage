@@ -6,7 +6,7 @@ const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
 export default defineConfig({
   branch,
   clientId: "e083a343-dc33-46c8-a94e-d373424431f5", // Get this from tina.io
-  token: "0674e73b657b7a05589860c7a0e38867a1ac1551", // Get this from tina.io
+  token: process.env.TINA_TOKEN, // Get this from tina.io
 
   build: {
     outputFolder: "admin",
@@ -85,7 +85,8 @@ export default defineConfig({
             date: new Date().toISOString(),
             draft: true,
             showDate: true,
-            showComments: true
+            showComments: true,
+            showDateUpdated: true
           }
         },
         fields: [
@@ -131,6 +132,16 @@ export default defineConfig({
           {
             label: 'Show Date',
             name: 'showDate',
+            type: 'boolean'
+          },
+          {
+            label: 'Date Updated',
+            name: 'dateUpdated',
+            type: 'datetime'
+          },
+          {
+            label: 'Show Date Updated',
+            name: 'showDateUpdated',
             type: 'boolean'
           },
           {

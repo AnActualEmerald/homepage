@@ -156,6 +156,8 @@ type Post implements Node & Document {
   author: String
   date: String
   showDate: Boolean
+  dateUpdated: String
+  showDateUpdated: Boolean
   draft: Boolean
   showComments: Boolean
   body: JSON
@@ -171,6 +173,8 @@ input PostFilter {
   author: StringFilter
   date: DatetimeFilter
   showDate: BooleanFilter
+  dateUpdated: DatetimeFilter
+  showDateUpdated: BooleanFilter
   draft: BooleanFilter
   showComments: BooleanFilter
   body: RichTextFilter
@@ -226,6 +230,8 @@ input PostMutation {
   author: String
   date: String
   showDate: Boolean
+  dateUpdated: String
+  showDateUpdated: Boolean
   draft: Boolean
   showComments: Boolean
   body: JSON
