@@ -5,7 +5,7 @@ var config_default = defineConfig({
   branch,
   clientId: "e083a343-dc33-46c8-a94e-d373424431f5",
   // Get this from tina.io
-  token: "0674e73b657b7a05589860c7a0e38867a1ac1551",
+  token: process.env.TINA_TOKEN,
   // Get this from tina.io
   build: {
     outputFolder: "admin",
@@ -83,7 +83,8 @@ var config_default = defineConfig({
             date: (/* @__PURE__ */ new Date()).toISOString(),
             draft: true,
             showDate: true,
-            showComments: true
+            showComments: true,
+            showDateUpdated: true
           }
         },
         fields: [
@@ -129,6 +130,16 @@ var config_default = defineConfig({
           {
             label: "Show Date",
             name: "showDate",
+            type: "boolean"
+          },
+          {
+            label: "Date Updated",
+            name: "dateUpdated",
+            type: "datetime"
+          },
+          {
+            label: "Show Date Updated",
+            name: "showDateUpdated",
             type: "boolean"
           },
           {

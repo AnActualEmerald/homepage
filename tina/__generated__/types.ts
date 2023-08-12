@@ -253,6 +253,8 @@ export type Post = Node & Document & {
   author?: Maybe<Scalars['String']['output']>;
   date?: Maybe<Scalars['String']['output']>;
   showDate?: Maybe<Scalars['Boolean']['output']>;
+  dateUpdated?: Maybe<Scalars['String']['output']>;
+  showDateUpdated?: Maybe<Scalars['Boolean']['output']>;
   draft?: Maybe<Scalars['Boolean']['output']>;
   showComments?: Maybe<Scalars['Boolean']['output']>;
   body?: Maybe<Scalars['JSON']['output']>;
@@ -268,6 +270,8 @@ export type PostFilter = {
   author?: InputMaybe<StringFilter>;
   date?: InputMaybe<DatetimeFilter>;
   showDate?: InputMaybe<BooleanFilter>;
+  dateUpdated?: InputMaybe<DatetimeFilter>;
+  showDateUpdated?: InputMaybe<BooleanFilter>;
   draft?: InputMaybe<BooleanFilter>;
   showComments?: InputMaybe<BooleanFilter>;
   body?: InputMaybe<RichTextFilter>;
@@ -377,6 +381,8 @@ export type PostMutation = {
   author?: InputMaybe<Scalars['String']['input']>;
   date?: InputMaybe<Scalars['String']['input']>;
   showDate?: InputMaybe<Scalars['Boolean']['input']>;
+  dateUpdated?: InputMaybe<Scalars['String']['input']>;
+  showDateUpdated?: InputMaybe<Scalars['Boolean']['input']>;
   draft?: InputMaybe<Scalars['Boolean']['input']>;
   showComments?: InputMaybe<Scalars['Boolean']['input']>;
   body?: InputMaybe<Scalars['JSON']['input']>;
@@ -384,7 +390,7 @@ export type PostMutation = {
 
 export type StoryPartsFragment = { __typename?: 'Story', title: string, tags?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, body?: any | null };
 
-export type PostPartsFragment = { __typename?: 'Post', title: string, tags?: Array<string | null> | null, categories?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, showComments?: boolean | null, body?: any | null };
+export type PostPartsFragment = { __typename?: 'Post', title: string, tags?: Array<string | null> | null, categories?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, dateUpdated?: string | null, showDateUpdated?: boolean | null, draft?: boolean | null, showComments?: boolean | null, body?: any | null };
 
 export type StoryQueryVariables = Exact<{
   relativePath: Scalars['String']['input'];
@@ -410,7 +416,7 @@ export type PostQueryVariables = Exact<{
 }>;
 
 
-export type PostQuery = { __typename?: 'Query', post: { __typename?: 'Post', id: string, title: string, tags?: Array<string | null> | null, categories?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, showComments?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
+export type PostQuery = { __typename?: 'Query', post: { __typename?: 'Post', id: string, title: string, tags?: Array<string | null> | null, categories?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, dateUpdated?: string | null, showDateUpdated?: boolean | null, draft?: boolean | null, showComments?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
 
 export type PostConnectionQueryVariables = Exact<{
   before?: InputMaybe<Scalars['String']['input']>;
@@ -422,7 +428,7 @@ export type PostConnectionQueryVariables = Exact<{
 }>;
 
 
-export type PostConnectionQuery = { __typename?: 'Query', postConnection: { __typename?: 'PostConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'PostConnectionEdges', cursor: string, node?: { __typename?: 'Post', id: string, title: string, tags?: Array<string | null> | null, categories?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, showComments?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
+export type PostConnectionQuery = { __typename?: 'Query', postConnection: { __typename?: 'PostConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'PostConnectionEdges', cursor: string, node?: { __typename?: 'Post', id: string, title: string, tags?: Array<string | null> | null, categories?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, dateUpdated?: string | null, showDateUpdated?: boolean | null, draft?: boolean | null, showComments?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
 
 export const StoryPartsFragmentDoc = gql`
     fragment StoryParts on Story {
@@ -443,6 +449,8 @@ export const PostPartsFragmentDoc = gql`
   author
   date
   showDate
+  dateUpdated
+  showDateUpdated
   draft
   showComments
   body

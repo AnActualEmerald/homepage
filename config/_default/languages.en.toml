@@ -1,22 +1,22 @@
 languageCode = "en"
 languageName = "English"
-displayName = "EN"
-isoCode = "en"
 weight = 1
-rtl = false
-
 title = "Verdant Homeland"
-# logo = "img/logo.png"
-description = "A place of respite for those of a greener persuasion"
-# copyright = "Copy, _right?_ :thinking_face:"
 
-dateFormat = "2 January 2006"
+[params]
+  # logo = "img/logo.png"
+  description = "A place of respite for those of a greener persuasion"
+  # copyright = ""
+  rtl = false
+  displayName = "EN"
+  isoCode = "en"
+  dateFormat = "2 January 2006"
 
 [author]
   name = "Emerald"
   # image = "img/blowfish_logo.png"
   headline = "Abandon hope, all ye who enter here"
-  # bio = "A little bit about you"
+  bio = "Proprietor of this fine esablishment, enjoyer of large robots, and heretofore uncontained cognitohazard"
   links = [
   #   { email = "mailto:hello@your_domain.com" },
   #  { link = "https://cathode.tube" },
@@ -39,7 +39,8 @@ dateFormat = "2 January 2006"
   #   { kickstarter = "https://www.kickstarter.com/profile/username" },
   #   { lastfm = "https://lastfm.com/user/username" },
   #   { linkedin = "https://linkedin.com/in/username" },
-     { mastodon = "https://uwu.social/@emerald" },
+      { fediverse = "https://mecha.garden/@emerald" },
+      { forgejo = "https://forge.greenboi.me" },
   #   { medium = "https://medium.com/username" },
   #   { microsoft = "https://www.microsoft.com/" },
   #   { orcid = "https://orcid.org/userid" },
