@@ -26,13 +26,13 @@ enableCodeCopy = true
   showScrollToTop = true
 
 [homepage]
-  layout = "hero" # valid options: page, profile, hero, card, background, custom
-  homepageImage = "green-612x612.jpg" # used in: hero, and card
+  layout = "background" # valid options: page, profile, hero, card, background, custom
+  homepageImage = "geom-green.jpg" # used in: hero, and card
   showRecent = true
   showRecentItems = 5
   showMoreLink = false
   showMoreLinkDest = "/posts"
-  cardView = false
+  cardView = true
   cardViewScreenWidth = false
   layoutBackgroundBlur = false # only used when layout equals background
 
@@ -57,7 +57,7 @@ enableCodeCopy = true
   showReadingTime = true
   showTableOfContents = true
   showTaxonomies = false 
-  showAuthorsBadges = false 
+  showAuthorsBadges = false
   showWordCount = true
   showSummary = true
   sharingLinks = [ "fediverse" ]
@@ -72,7 +72,7 @@ enableCodeCopy = true
   showTableOfContents = false
   showCards = false
   groupByYear = true
-  cardView = false
+  cardView = true
   cardViewScreenWidth = false
 
 [sitemap]
