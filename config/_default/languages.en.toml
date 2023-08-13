@@ -4,9 +4,9 @@ weight = 1
 title = "Verdant Homeland"
 
 [params]
-  # logo = "img/logo.png"
+  # logo = "gem.png"
   description = "A place of respite for those of a greener persuasion"
-  # copyright = ""
+  copyright = """©{ year } AnActualEmerald | [Emerald icons created by RIkas Dzihab - Flaticon](https://www.flaticon.com/free-icons/emerald)"""
   rtl = false
   displayName = "EN"
   isoCode = "en"
@@ -14,11 +14,11 @@ title = "Verdant Homeland"
 
 [author]
   name = "Emerald"
-  # image = "img/blowfish_logo.png"
+  image = "gem.png"
   headline = "Abandon hope, all ye who enter here"
   bio = "Proprietor of this fine esablishment, enjoyer of large robots, and heretofore uncontained cognitohazard"
   links = [
-  #   { email = "mailto:hello@your_domain.com" },
+      { email = "mailto:emerald@emeraldgreen.dev" },
   #  { link = "https://cathode.tube" },
   #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
   #   { apple = "https://www.apple.com" },
