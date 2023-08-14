@@ -91,6 +91,7 @@ union DocumentNode = Story | Post | Folder
 
 type Story implements Node & Document {
   title: String!
+  series: [String]
   tags: [String]
   author: String
   date: String
@@ -130,6 +131,7 @@ input RichTextFilter {
 
 input StoryFilter {
   title: StringFilter
+  series: StringFilter
   tags: StringFilter
   author: StringFilter
   date: DatetimeFilter
@@ -215,6 +217,7 @@ input DocumentMutation {
 
 input StoryMutation {
   title: String
+  series: [String]
   tags: [String]
   author: String
   date: String

@@ -1,4 +1,4 @@
-// tina/config.ts
+// tina/config.js
 import { defineConfig } from "tinacms";
 var branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
 var config_default = defineConfig({
@@ -13,7 +13,7 @@ var config_default = defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: "",
+      mediaRoot: "media",
       publicFolder: "static"
     }
   },
@@ -38,6 +38,12 @@ var config_default = defineConfig({
             label: "Title",
             isTitle: true,
             required: true
+          },
+          {
+            label: "Series",
+            name: "series",
+            type: "string",
+            list: true
           },
           {
             label: "Tags",
@@ -114,6 +120,18 @@ var config_default = defineConfig({
               {
                 value: "reviews",
                 label: "Reviews"
+              },
+              {
+                value: "fluff",
+                label: "Fluff"
+              },
+              {
+                value: "tech",
+                label: "Tech"
+              },
+              {
+                value: "programming",
+                label: "Programming"
               }
             ]
           },

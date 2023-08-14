@@ -14,7 +14,7 @@ export default defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: "",
+      mediaRoot: "media",
       publicFolder: "static",
     },
   },
@@ -39,6 +39,12 @@ export default defineConfig({
             label: "Title",
             isTitle: true,
             required: true,
+          },
+          {
+            label: 'Series',
+            name: 'series',
+            type: 'string',
+            list: true,
           },
           {
             label: 'Tags',
@@ -116,6 +122,18 @@ export default defineConfig({
               {
                 value: 'reviews',
                 label: 'Reviews'
+              },
+              {
+                value: 'fluff',
+                label: 'Fluff'
+              },
+              {
+                value: 'tech',
+                label: 'Tech'
+              },
+              {
+                value: 'programming',
+                label: 'Programming',
               }
             ]
           },
