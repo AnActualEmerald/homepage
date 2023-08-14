@@ -1,5 +1,6 @@
 fragment StoryParts on Story {
   title
+  series
   tags
   author
   date

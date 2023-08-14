@@ -185,6 +185,7 @@ export type DocumentNode = Story | Post | Folder;
 export type Story = Node & Document & {
   __typename?: 'Story';
   title: Scalars['String']['output'];
+  series?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   tags?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   author?: Maybe<Scalars['String']['output']>;
   date?: Maybe<Scalars['String']['output']>;
@@ -224,6 +225,7 @@ export type RichTextFilter = {
 
 export type StoryFilter = {
   title?: InputMaybe<StringFilter>;
+  series?: InputMaybe<StringFilter>;
   tags?: InputMaybe<StringFilter>;
   author?: InputMaybe<StringFilter>;
   date?: InputMaybe<DatetimeFilter>;
@@ -366,6 +368,7 @@ export type DocumentMutation = {
 
 export type StoryMutation = {
   title?: InputMaybe<Scalars['String']['input']>;
+  series?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   tags?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   author?: InputMaybe<Scalars['String']['input']>;
   date?: InputMaybe<Scalars['String']['input']>;
@@ -388,7 +391,7 @@ export type PostMutation = {
   body?: InputMaybe<Scalars['JSON']['input']>;
 };
 
-export type StoryPartsFragment = { __typename?: 'Story', title: string, tags?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, body?: any | null };
+export type StoryPartsFragment = { __typename?: 'Story', title: string, series?: Array<string | null> | null, tags?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, body?: any | null };
 
 export type PostPartsFragment = { __typename?: 'Post', title: string, tags?: Array<string | null> | null, categories?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, dateUpdated?: string | null, showDateUpdated?: boolean | null, draft?: boolean | null, showComments?: boolean | null, body?: any | null };
 
@@ -397,7 +400,7 @@ export type StoryQueryVariables = Exact<{
 }>;
 
 
-export type StoryQuery = { __typename?: 'Query', story: { __typename?: 'Story', id: string, title: string, tags?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
+export type StoryQuery = { __typename?: 'Query', story: { __typename?: 'Story', id: string, title: string, series?: Array<string | null> | null, tags?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
 
 export type StoryConnectionQueryVariables = Exact<{
   before?: InputMaybe<Scalars['String']['input']>;
@@ -409,7 +412,7 @@ export type StoryConnectionQueryVariables = Exact<{
 }>;
 
 
-export type StoryConnectionQuery = { __typename?: 'Query', storyConnection: { __typename?: 'StoryConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'StoryConnectionEdges', cursor: string, node?: { __typename?: 'Story', id: string, title: string, tags?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
+export type StoryConnectionQuery = { __typename?: 'Query', storyConnection: { __typename?: 'StoryConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'StoryConnectionEdges', cursor: string, node?: { __typename?: 'Story', id: string, title: string, series?: Array<string | null> | null, tags?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
 
 export type PostQueryVariables = Exact<{
   relativePath: Scalars['String']['input'];
@@ -433,6 +436,7 @@ export type PostConnectionQuery = { __typename?: 'Query', postConnection: { __ty
 export const StoryPartsFragmentDoc = gql`
     fragment StoryParts on Story {
   title
+  series
   tags
   author
   date
