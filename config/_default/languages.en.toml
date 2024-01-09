@@ -4,22 +4,22 @@ weight = 1
 title = "Verdant Homeland"
 
 [params]
-  # logo = "gem.png"
-  description = "A place of respite for those of a greener persuasion"
-  copyright = """©{ year } AnActualEmerald | [Emerald icons created by RIkas Dzihab - Flaticon](https://www.flaticon.com/free-icons/emerald)"""
-  rtl = false
-  displayName = "EN"
-  isoCode = "en"
-  dateFormat = "2 January 2006"
+# logo = "gem.png"
+description = "A place of respite for those of a greener persuasion"
+copyright = """©{ year } AnActualEmerald | [Emerald icons created by RIkas Dzihab - Flaticon](https://www.flaticon.com/free-icons/emerald)"""
+rtl = false
+displayName = "EN"
+isoCode = "en"
+dateFormat = "2 January 2006"
 
 [author]
-  name = "Emerald"
-  image = "gem.png"
-  headline = "Abandon hope, all ye who enter here"
-  bio = "Proprietor of this fine esablishment, enjoyer of large robots, and heretofore uncontained cognitohazard"
-  links = [
-      { email = "mailto:emerald@emeraldgreen.dev" },
-  #  { link = "https://cathode.tube" },
+name = "Emerald"
+image = "gem.png"
+headline = "Abandon hope, all ye who enter here"
+bio = "Proprietor of this fine esablishment, enjoyer of large robots, and heretofore uncontained cognitohazard"
+links = [
+  { email = "mailto:emerald@emeraldgreen.dev" },
+  { link = "https://cathode.tube" },
   #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
   #   { apple = "https://www.apple.com" },
   #   { blogger = "https://username.blogspot.com/" },
@@ -39,8 +39,8 @@ title = "Verdant Homeland"
   #   { kickstarter = "https://www.kickstarter.com/profile/username" },
   #   { lastfm = "https://lastfm.com/user/username" },
   #   { linkedin = "https://linkedin.com/in/username" },
-      { fediverse = "https://mecha.garden/@emerald" },
-      { forgejo = "https://forge.greenboi.me" },
+  { fediverse = "https://mecha.garden/@emerald" },
+  { forgejo = "https://forge.greenboi.me" },
   #   { medium = "https://medium.com/username" },
   #   { microsoft = "https://www.microsoft.com/" },
   #   { orcid = "https://orcid.org/userid" },
@@ -61,4 +61,4 @@ title = "Verdant Homeland"
   #   { whatsapp = "https://wa.me/phone-number" },
   #   { youtube = "https://youtube.com/username" },
   #   { ko-fi = "https://ko-fi.com/username" },
-  ]
+]
