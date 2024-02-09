@@ -89,7 +89,6 @@ var config_default = defineConfig({
             date: (/* @__PURE__ */ new Date()).toISOString(),
             draft: true,
             showDate: true,
-            showComments: true,
             showDateUpdated: true
           }
         },
@@ -163,11 +162,6 @@ var config_default = defineConfig({
           {
             name: "draft",
             label: "Draft",
-            type: "boolean"
-          },
-          {
-            name: "showComments",
-            label: "Show Comments",
             type: "boolean"
           },
           {
