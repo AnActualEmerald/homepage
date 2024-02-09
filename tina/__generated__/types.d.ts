@@ -258,7 +258,6 @@ export type Post = Node & Document & {
   dateUpdated?: Maybe<Scalars['String']['output']>;
   showDateUpdated?: Maybe<Scalars['Boolean']['output']>;
   draft?: Maybe<Scalars['Boolean']['output']>;
-  showComments?: Maybe<Scalars['Boolean']['output']>;
   body?: Maybe<Scalars['JSON']['output']>;
   id: Scalars['ID']['output'];
   _sys: SystemInfo;
@@ -275,7 +274,6 @@ export type PostFilter = {
   dateUpdated?: InputMaybe<DatetimeFilter>;
   showDateUpdated?: InputMaybe<BooleanFilter>;
   draft?: InputMaybe<BooleanFilter>;
-  showComments?: InputMaybe<BooleanFilter>;
   body?: InputMaybe<RichTextFilter>;
 };
 
@@ -387,20 +385,19 @@ export type PostMutation = {
   dateUpdated?: InputMaybe<Scalars['String']['input']>;
   showDateUpdated?: InputMaybe<Scalars['Boolean']['input']>;
   draft?: InputMaybe<Scalars['Boolean']['input']>;
-  showComments?: InputMaybe<Scalars['Boolean']['input']>;
   body?: InputMaybe<Scalars['JSON']['input']>;
 };
 
-export type StoryPartsFragment = { __typename?: 'Story', title: string, series?: Array<string | null> | null, tags?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, body?: any | null };
+export type StoryPartsFragment = { __typename: 'Story', title: string, series?: Array<string | null> | null, tags?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, body?: any | null };
 
-export type PostPartsFragment = { __typename?: 'Post', title: string, tags?: Array<string | null> | null, categories?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, dateUpdated?: string | null, showDateUpdated?: boolean | null, draft?: boolean | null, showComments?: boolean | null, body?: any | null };
+export type PostPartsFragment = { __typename: 'Post', title: string, tags?: Array<string | null> | null, categories?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, dateUpdated?: string | null, showDateUpdated?: boolean | null, draft?: boolean | null, body?: any | null };
 
 export type StoryQueryVariables = Exact<{
   relativePath: Scalars['String']['input'];
 }>;
 
 
-export type StoryQuery = { __typename?: 'Query', story: { __typename?: 'Story', id: string, title: string, series?: Array<string | null> | null, tags?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
+export type StoryQuery = { __typename?: 'Query', story: { __typename: 'Story', id: string, title: string, series?: Array<string | null> | null, tags?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
 
 export type StoryConnectionQueryVariables = Exact<{
   before?: InputMaybe<Scalars['String']['input']>;
@@ -412,14 +409,14 @@ export type StoryConnectionQueryVariables = Exact<{
 }>;
 
 
-export type StoryConnectionQuery = { __typename?: 'Query', storyConnection: { __typename?: 'StoryConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'StoryConnectionEdges', cursor: string, node?: { __typename?: 'Story', id: string, title: string, series?: Array<string | null> | null, tags?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
+export type StoryConnectionQuery = { __typename?: 'Query', storyConnection: { __typename?: 'StoryConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'StoryConnectionEdges', cursor: string, node?: { __typename: 'Story', id: string, title: string, series?: Array<string | null> | null, tags?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, draft?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
 
 export type PostQueryVariables = Exact<{
   relativePath: Scalars['String']['input'];
 }>;
 
 
-export type PostQuery = { __typename?: 'Query', post: { __typename?: 'Post', id: string, title: string, tags?: Array<string | null> | null, categories?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, dateUpdated?: string | null, showDateUpdated?: boolean | null, draft?: boolean | null, showComments?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
+export type PostQuery = { __typename?: 'Query', post: { __typename: 'Post', id: string, title: string, tags?: Array<string | null> | null, categories?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, dateUpdated?: string | null, showDateUpdated?: boolean | null, draft?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
 
 export type PostConnectionQueryVariables = Exact<{
   before?: InputMaybe<Scalars['String']['input']>;
@@ -431,10 +428,11 @@ export type PostConnectionQueryVariables = Exact<{
 }>;
 
 
-export type PostConnectionQuery = { __typename?: 'Query', postConnection: { __typename?: 'PostConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'PostConnectionEdges', cursor: string, node?: { __typename?: 'Post', id: string, title: string, tags?: Array<string | null> | null, categories?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, dateUpdated?: string | null, showDateUpdated?: boolean | null, draft?: boolean | null, showComments?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
+export type PostConnectionQuery = { __typename?: 'Query', postConnection: { __typename?: 'PostConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'PostConnectionEdges', cursor: string, node?: { __typename: 'Post', id: string, title: string, tags?: Array<string | null> | null, categories?: Array<string | null> | null, author?: string | null, date?: string | null, showDate?: boolean | null, dateUpdated?: string | null, showDateUpdated?: boolean | null, draft?: boolean | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
 
 export const StoryPartsFragmentDoc = gql`
     fragment StoryParts on Story {
+  __typename
   title
   series
   tags
@@ -447,6 +445,7 @@ export const StoryPartsFragmentDoc = gql`
     `;
 export const PostPartsFragmentDoc = gql`
     fragment PostParts on Post {
+  __typename
   title
   tags
   categories
@@ -456,7 +455,6 @@ export const PostPartsFragmentDoc = gql`
   dateUpdated
   showDateUpdated
   draft
-  showComments
   body
 }
     `;
@@ -573,17 +571,17 @@ export const PostConnectionDocument = gql`
 export type Requester<C= {}> = <R, V>(doc: DocumentNode, vars?: V, options?: C) => Promise<R>
   export function getSdk<C>(requester: Requester<C>) {
     return {
-      story(variables: StoryQueryVariables, options?: C): Promise<{data: StoryQuery, variables: StoryQueryVariables, query: string}> {
-        return requester<{data: StoryQuery, variables: StoryQueryVariables, query: string}, StoryQueryVariables>(StoryDocument, variables, options);
+      story(variables: StoryQueryVariables, options?: C): Promise<{data: StoryQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: StoryQueryVariables, query: string}> {
+        return requester<{data: StoryQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: StoryQueryVariables, query: string}, StoryQueryVariables>(StoryDocument, variables, options);
       },
-    storyConnection(variables?: StoryConnectionQueryVariables, options?: C): Promise<{data: StoryConnectionQuery, variables: StoryConnectionQueryVariables, query: string}> {
-        return requester<{data: StoryConnectionQuery, variables: StoryConnectionQueryVariables, query: string}, StoryConnectionQueryVariables>(StoryConnectionDocument, variables, options);
+    storyConnection(variables?: StoryConnectionQueryVariables, options?: C): Promise<{data: StoryConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: StoryConnectionQueryVariables, query: string}> {
+        return requester<{data: StoryConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: StoryConnectionQueryVariables, query: string}, StoryConnectionQueryVariables>(StoryConnectionDocument, variables, options);
       },
-    post(variables: PostQueryVariables, options?: C): Promise<{data: PostQuery, variables: PostQueryVariables, query: string}> {
-        return requester<{data: PostQuery, variables: PostQueryVariables, query: string}, PostQueryVariables>(PostDocument, variables, options);
+    post(variables: PostQueryVariables, options?: C): Promise<{data: PostQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: PostQueryVariables, query: string}> {
+        return requester<{data: PostQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: PostQueryVariables, query: string}, PostQueryVariables>(PostDocument, variables, options);
       },
-    postConnection(variables?: PostConnectionQueryVariables, options?: C): Promise<{data: PostConnectionQuery, variables: PostConnectionQueryVariables, query: string}> {
-        return requester<{data: PostConnectionQuery, variables: PostConnectionQueryVariables, query: string}, PostConnectionQueryVariables>(PostConnectionDocument, variables, options);
+    postConnection(variables?: PostConnectionQueryVariables, options?: C): Promise<{data: PostConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: PostConnectionQueryVariables, query: string}> {
+        return requester<{data: PostConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: PostConnectionQueryVariables, query: string}, PostConnectionQueryVariables>(PostConnectionDocument, variables, options);
       }
     };
   }
@@ -613,7 +611,7 @@ const generateRequester = (
       url,
     })
 
-    return { data: data?.data, query: doc, variables: vars || {} }
+    return { data: data?.data, errors: data?.errors, query: doc, variables: vars || {} }
   }
 
   return requester
@@ -626,7 +624,7 @@ export const ExperimentalGetTinaClient = () =>
   getSdk(
     generateRequester(
       createClient({
-        url: "http://localhost:4001/graphql",
+        url: "https://content.tinajs.io/1.4/content/e083a343-dc33-46c8-a94e-d373424431f5/github/main",
         queries,
       })
     )

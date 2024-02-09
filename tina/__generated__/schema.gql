@@ -161,7 +161,6 @@ type Post implements Node & Document {
   dateUpdated: String
   showDateUpdated: Boolean
   draft: Boolean
-  showComments: Boolean
   body: JSON
   id: ID!
   _sys: SystemInfo!
@@ -178,7 +177,6 @@ input PostFilter {
   dateUpdated: DatetimeFilter
   showDateUpdated: BooleanFilter
   draft: BooleanFilter
-  showComments: BooleanFilter
   body: RichTextFilter
 }
 
@@ -236,7 +234,6 @@ input PostMutation {
   dateUpdated: String
   showDateUpdated: Boolean
   draft: Boolean
-  showComments: Boolean
   body: JSON
 }
 
