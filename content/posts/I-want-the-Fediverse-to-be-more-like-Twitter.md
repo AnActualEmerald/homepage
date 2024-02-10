@@ -23,4 +23,6 @@ The technical reasons for this behavior boil down to how ActivityPub works, or a
 
 Now let's say a user on Server C, Charles, also follows Bob and sees his post. Charles decides to leave a reply to Bob's post, and Server C wraps that reply up in another `Create` activity and sends it to all of Charles' followers, and to Bob's `inbox` on Server B. Now both people that follow Charles, other users on Server C, and users on Server B can see Charles' reply to Bob's post. Even people who don't follow Bob and didn't see his post originally will now be able to see it as it was referenced in Charles' reply, allowing their server to retrieve the post from Server B. But, unless someone on Server A follows Charles, or follows someone else who interacts with Charles' reply in some way, Alice won't be able to see it. Indeed Server A has no way to even know that there *are* replies to Bob's post, nor to ask for them to be sent after the fact. This also affects favorites/reactions. 
 
-## Okay but who cares?
+## Okay, but who cares?
+
+There are a few reasons why I think this behavior is more detrimental to the health of the federation than people give it credit. Let's start with a practical reason. YouTuber and heat pump enthusiast [Technology Connections](https://www.youtube.com/@TechnologyConnections) has complained [a](https://mas.to/@TechConnectify/111324366704315475) few
