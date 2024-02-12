@@ -10,10 +10,10 @@ author: Emerald
 date: 2024-02-09T22:06:13.262Z
 showDate: true
 showDateUpdated: false
-draft: true
+draft: false
 ---
 
-# The "Missing Replies" Problem
+## The "Missing Replies" Problem
 
 It's not a secret that on Mastodon and the software in it's sphere of influence (Pleroma, Misskey, etc.), when you see a post from a federated server, you're only seeing *some* of the information associated with that post. Specifically you will only see replies and reactions to a post that were made by a user that already sends your instance their activities, or that one such use has themselves replied or reacted to. The result of this is that the majority of posts in the global/federated timeline look like nobody has interacted with them; not a problem in and of itself per se, but I think this is a major contributor to the "walking on eggshells" feeling a lot of fedi newcomers mention, myself included. I'd like to use this post to explore this problem a bit, and maybe try to brainstorm some solutions as I think solving this would make fedi feel more vibrant and perhaps get more people interested in using it over other alternatives.
 
@@ -25,7 +25,7 @@ Now let's say a user on Server C, Charles, also follows Bob and sees his post. C
 
 ## Okay, but who cares?
 
-There are a few reasons why I think this behavior is more detrimental to the health of the federation than people give it credit. Let's start with a practical reason. YouTuber and heat pump enthusiast [Technology Connections](https://www.youtube.com/@TechnologyConnections) has complained [a](https://mas.to/@TechConnectify/111324366704315475) [few](https://mas.to/@TechConnectify/111513880618627615) [times](https://mas.to/@TechConnectify/111545406365140129) about the nature of federation and how it makes certain types of interaction more difficult than on Twitter or a similar but centralized service. Most of TC's complaints center around moderation (which is its own can of worms honestly), but I think some of the things in those threads could at least be mitigated if the visibility of replies wasn't so fragmented. If bad faith or abusive replies were seen by more people, then there would not only be more pressure on that user's moderators to take some sort of action, but it would also help limit misbehaving instances from the federation in general. 
+There are a few reasons why I think this behavior is more detrimental to the health of the federation than people give it credit. Let's start with a practical reason. YouTuber and heat pump enthusiast [Technology Connections](https://www.youtube.com/@TechnologyConnections) has complained [a](https://mas.to/@TechConnectify/111324366704315475) [few](https://mas.to/@TechConnectify/111513880618627615) [times](https://mas.to/@TechConnectify/111545406365140129) about the nature of federation and how it makes certain types of interaction more difficult than on Twitter or a similar but centralized service. Most of TC's complaints center around moderation (which is its own can of worms honestly), but I think some of the things in those threads could at least be mitigated if the visibility of replies wasn't so fragmented. If bad faith or abusive replies were seen by more people, then there would not only be more pressure on that user's moderators to take some sort of action, but it would also help limit misbehaving instances from the federation in general.
 
 Beyond the issue of moderation, the current state of replies also exacerbates the existing issue of people posting the same reply over and over again. Usually this is due to not checking/not caring to check if some one else already said whatever you were going to say. But of course, on fedi it's much harder to ensure that you aren't repeating someone else as it involves viewing the post you're replying to on its home instance, typically requiring a new browser window or leaving a mobile app or whatever. This probably isn't a huge issue for most users, but for larger accounts like Mr. Connections, it can be pretty annoying if nothing else (I'm pretty sure he's complained about this specifically as well but I couldn't find the toot because Mastodon's text search is also its own can of worms).
 
