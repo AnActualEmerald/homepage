@@ -1,7 +1,5 @@
 ---
 title: Iamennos of the Black Isles
-series:
-  - Iamennos
 tags:
   - Dungeons and Dragons
 author: Emerald
@@ -54,6 +52,6 @@ The two undead soldiers dragged him between them towards the forest that covered
 
 Iamennos hauled himself up to lean on the stump. His knees trembled and he had to focus on not passing out. When had he become so exhausted? He forced himself to meet the dracolich's gaze. "I've already agreed to your pact, haven't I? Why drag me out here?" he said. It occurred to him that he was interrogating an undead dragon with claws the size of his entire body, but Caythoanth simply stared at him.
 
-"I prefer to have these things in writing" it said flatly. Ah, he thought, paperwork. Of course. Caythoanth reached out a claw, dragging it across the surface of the stump and leaving a trail of mist. "As you noted, you have already agreed to the terms. This is merely formality." The mist cleared to reveal a large sheet of yellowed parchment that looked as old as Caythoanth. The ink on the page swam and swirled, moving in ways Iamennos was almost certain ink wasn't supposed to. 
+"I prefer to have these things in writing" it said flatly. Ah, he thought, paperwork. Of course. Caythoanth reached out a claw, dragging it across the surface of the stump and leaving a trail of mist. "As you noted, you have already agreed to the terms. This is merely formality." The mist cleared to reveal a large sheet of yellowed parchment that looked as old as Caythoanth. The ink on the page swam and swirled, moving in ways Iamennos was almost certain ink wasn't supposed to.
 
 Caythoanth tapped a claw on the stump, annoyed. "Ah" it said after a moment, "you're illiterate." Caythoanth reached out and tapped the parchment once, and the ink snapped into somewhat crude drawings depicting the terms of the contract.
