@@ -26,14 +26,13 @@
 		margin-inline: auto;
 	}
 
-	main {
-		padding-inline: var(--size-7);
-		padding-block: var(--size-9);
-	}
 
-	@media (min-width: 1920px) {
+
+	@media (min-width: 1440px) {
 		.layout {
 			padding-inline: 0;
 		}
+
+
 	}
 </style>

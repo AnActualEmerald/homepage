@@ -28,8 +28,11 @@
 
 <style lang="scss">
 	.posts {
-		width: 33%;
+		// min-width: 50%;
+		height: max-content;
+		width: max-content;
 		padding-inline: var(--size-10);
+		margin-block: var(--size-10);
 		small {
 			color: var(--text-2);
 			filter: opacity(50%);
@@ -46,6 +49,7 @@
 		padding-block: var(--size-4);
 		transition-property: box-shadow;
 		transition-duration: 0.25s;
+		margin-bottom: var(--size-10);
 
 		&:hover {
 			box-shadow: 0px 0px 10px var(--brand);

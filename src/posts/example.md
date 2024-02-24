@@ -11,4 +11,5 @@ tags:
 
 # Hello world
 
-Boy oh boy this sure is a blog am I right?
+Boy oh boy this sure is a blog am I right? This is a great example of the typical blog post.
+

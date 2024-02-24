@@ -20,6 +20,7 @@ html {
 
     --border-light: var(--gray-4);
 
+
     // -- dark -- //
     --brand-dark: var(--green-4);
     --text-1-dark: var(--gray-3);
@@ -31,6 +32,7 @@ html {
     --surface-4-dark: var(--gray-8);
 
     --border-dark: var(--gray-7);
+
 }
 
 // -- light theme -- //
@@ -159,4 +161,20 @@ a {
 .surface-4 {
     background-color: var(--surface-4);
     color: var(--text-1);
+}
+
+.post {
+    h1, h2, h3, h4, h5, h6  {
+        margin-block: var(--size-4);
+    }
+
+    p {
+        text-indent: 4ch;
+        margin-block: var(--size-2)
+    }
+
+    del {
+        background-color: transparent;
+        color: inherit
+    }
 }

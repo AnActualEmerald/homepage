@@ -8,4 +8,4 @@ export type Post = {
 	published: boolean;
 };
 
-export type Categories = 'Programming' | 'Tech' | 'Fluff';
+export type Categories = 'Programming' | 'Tech' | 'Fluff' | 'Reviews';
