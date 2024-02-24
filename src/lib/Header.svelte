@@ -1,8 +1,9 @@
 <header class="surface-3">
 	<a href="/">Home</a>
 	<ul class="links">
-		<li><a href="/blog">Blog</a></li>
+		<li><a href="/posts">Blog</a></li>
 	</ul>
+	<span> THEME </span>
 </header>
 
 <style lang="scss">
@@ -20,6 +21,11 @@
 	}
 
 	.links {
+		padding: 0px;
 		display: flex;
+
+		li {
+			padding: 0px;
+		}
 	}
 </style>

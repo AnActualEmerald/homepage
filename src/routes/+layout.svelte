@@ -1,6 +1,7 @@
 <script lang="ts">
 	import 'open-props/style';
 	import 'open-props/normalize';
+	import 'open-props/colors-hsl';
 	import '@fontsource/roboto';
 	import '@fontsource/space-mono';
 
@@ -14,26 +15,23 @@
 	<main>
 		<slot />
 	</main>
-
-    
 </div>
 
 <style lang="scss">
 	.layout {
 		height: 100%;
-		max-inline-size: 1440px;
+		max-inline-size: 1920px;
 		display: grid;
 		grid-template-rows: auto 1fr auto;
 		margin-inline: auto;
 	}
 
 	main {
-
 		padding-inline: var(--size-7);
 		padding-block: var(--size-9);
 	}
 
-	@media (min-width: 1440px) {
+	@media (min-width: 1920px) {
 		.layout {
 			padding-inline: 0;
 		}

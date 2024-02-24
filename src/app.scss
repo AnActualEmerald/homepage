@@ -9,7 +9,7 @@ html {
 
 
     // -- light -- //
-    --brand-light: var(--green-10);
+    --brand-light: var(--green-10-hsl);
     --text-1-light: var(--gray-11);
     --text-2-light: var(--gray-10);
 
@@ -38,7 +38,7 @@ html {
     :root {
         color-scheme: light;
 
-        --brand: var(--brand-light);
+        --brand: var(--brand-light-hsl);
         --text-1: var(--text-1-light);
         --text-2: var(--text-2-light);
 
@@ -127,8 +127,17 @@ dd {
     color: var(--text-2);
 }
 
-a:hover {
-    text-decoration-color: var(--brand);
+a {
+    color: var(--brand);
+
+    &:hover {
+        text-decoration-color: var(--brand);
+    }
+    
+    &:visited {
+        filter: brightness(85%);
+    }
+    
 }
 
 
