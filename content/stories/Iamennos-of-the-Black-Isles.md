@@ -1,8 +1,7 @@
 ---
 showAuthor: false
 title: Iamennos of the Black Isles
-series:
-  - Iamennos
+series: Iamennos
 tags:
   - Dungeons and Dragons
 author: Emerald
