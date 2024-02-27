@@ -2,10 +2,9 @@ fragment StoryParts on Story {
   __typename
   title
   series
+  series_order
   tags
   author
-  date
-  showDate
   draft
   body
 }

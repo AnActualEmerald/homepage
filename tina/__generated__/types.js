@@ -10,10 +10,9 @@ export const StoryPartsFragmentDoc = gql`
   __typename
   title
   series
+  series_order
   tags
   author
-  date
-  showDate
   draft
   body
 }

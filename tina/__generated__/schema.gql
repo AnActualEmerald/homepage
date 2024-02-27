@@ -91,11 +91,10 @@ union DocumentNode = Story | Post | Folder
 
 type Story implements Node & Document {
   title: String!
-  series: [String]
+  series: String
+  series_order: Float
   tags: [String]
   author: String
-  date: String
-  showDate: Boolean
   draft: Boolean
   body: JSON
   id: ID!
@@ -110,12 +109,14 @@ input StringFilter {
   in: [String]
 }
 
-input DatetimeFilter {
-  after: String
-  before: String
-  eq: String
+input NumberFilter {
+  lt: Float
+  lte: Float
+  gte: Float
+  gt: Float
+  eq: Float
   exists: Boolean
-  in: [String]
+  in: [Float]
 }
 
 input BooleanFilter {
@@ -132,10 +133,9 @@ input RichTextFilter {
 input StoryFilter {
   title: StringFilter
   series: StringFilter
+  series_order: NumberFilter
   tags: StringFilter
   author: StringFilter
-  date: DatetimeFilter
-  showDate: BooleanFilter
   draft: BooleanFilter
   body: RichTextFilter
 }
@@ -165,6 +165,14 @@ type Post implements Node & Document {
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
+}
+
+input DatetimeFilter {
+  after: String
+  before: String
+  eq: String
+  exists: Boolean
+  in: [String]
 }
 
 input PostFilter {
@@ -215,11 +223,10 @@ input DocumentMutation {
 
 input StoryMutation {
   title: String
-  series: [String]
+  series: String
+  series_order: Float
   tags: [String]
   author: String
-  date: String
-  showDate: Boolean
   draft: Boolean
   body: JSON
 }

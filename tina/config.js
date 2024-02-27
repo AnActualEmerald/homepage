@@ -27,9 +27,9 @@ export default defineConfig({
         ui: {
           defaultItem: {
             author: 'Emerald',
-            date: new Date().toISOString(),
             draft: true,
-            showDate: false
+            series: '',
+            series_order: 0,
           }
         },
         fields: [
@@ -44,7 +44,11 @@ export default defineConfig({
             label: 'Series',
             name: 'series',
             type: 'string',
-            list: true,
+          },
+          {
+            label: 'Series Order',
+            name: 'series_order',
+            type: 'number',
           },
           {
             label: 'Tags',
@@ -56,16 +60,6 @@ export default defineConfig({
             name: 'author',
             label: 'Author',
             type: 'string',
-          },
-          {
-            label: 'Date',
-            name: 'date',
-            type: 'datetime'
-          },
-          {
-            label: 'Show Date',
-            name: 'showDate',
-            type: 'boolean'
           },
           {
             name: 'draft',

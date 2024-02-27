@@ -26,9 +26,9 @@ var config_default = defineConfig({
         ui: {
           defaultItem: {
             author: "Emerald",
-            date: (/* @__PURE__ */ new Date()).toISOString(),
             draft: true,
-            showDate: false
+            series: "",
+            series_order: 0
           }
         },
         fields: [
@@ -42,8 +42,12 @@ var config_default = defineConfig({
           {
             label: "Series",
             name: "series",
-            type: "string",
-            list: true
+            type: "string"
+          },
+          {
+            label: "Series Order",
+            name: "series_order",
+            type: "number"
           },
           {
             label: "Tags",
@@ -55,16 +59,6 @@ var config_default = defineConfig({
             name: "author",
             label: "Author",
             type: "string"
-          },
-          {
-            label: "Date",
-            name: "date",
-            type: "datetime"
-          },
-          {
-            label: "Show Date",
-            name: "showDate",
-            type: "boolean"
           },
           {
             name: "draft",
