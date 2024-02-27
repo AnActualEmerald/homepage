@@ -1,6 +1,7 @@
 ---
 title: The Deal
-series: Iamennos
+series:
+  - Iamennos
 tags:
   - Dungeons and Dragons
 author: Emerald

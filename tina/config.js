@@ -28,7 +28,7 @@ export default defineConfig({
           defaultItem: {
             author: 'Emerald',
             draft: true,
-            series: '',
+            series: [],
             series_order: 0,
           }
         },
@@ -44,6 +44,7 @@ export default defineConfig({
             label: 'Series',
             name: 'series',
             type: 'string',
+            list: true,
           },
           {
             label: 'Series Order',
