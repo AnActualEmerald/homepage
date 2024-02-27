@@ -1,9 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-showDate: true
+showDate: false
+showAuthor: false
 draft: true
-showDateUpdated: true
-categories: [""]
 ---
-
