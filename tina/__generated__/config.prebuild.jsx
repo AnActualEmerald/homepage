@@ -27,7 +27,7 @@ var config_default = defineConfig({
           defaultItem: {
             author: "Emerald",
             draft: true,
-            series: "",
+            series: [],
             series_order: 0
           }
         },
@@ -42,7 +42,8 @@ var config_default = defineConfig({
           {
             label: "Series",
             name: "series",
-            type: "string"
+            type: "string",
+            list: true
           },
           {
             label: "Series Order",

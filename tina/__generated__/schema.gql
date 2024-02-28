@@ -91,7 +91,7 @@ union DocumentNode = Story | Post | Folder
 
 type Story implements Node & Document {
   title: String!
-  series: String
+  series: [String]
   series_order: Float
   tags: [String]
   author: String
@@ -223,7 +223,7 @@ input DocumentMutation {
 
 input StoryMutation {
   title: String
-  series: String
+  series: [String]
   series_order: Float
   tags: [String]
   author: String
