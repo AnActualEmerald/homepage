@@ -7,9 +7,7 @@ series_order: 1
 tags:
   - Dungeons and Dragons
 author: Emerald
-date: 2024-02-19T20:48:01.732Z
-showDate: false
-draft: true
+draft: false
 ---
 
 Iamennos stared at the far wall of his cell. The black stone glistened in the weak lamplight, tiny water droplets clinging to its cool surface. The room was small, perhaps 6 feet wide and 8 feet deep, and barely 6 feet tall. The entire dungeon had been carved into a massive underground ledge of black granite, the stone that gave the Black Isles their name. Iamennos thought it odd that they had committed such a large chunk of their potential exports to such an extravagant prison, but then that was how the nobility of the Isles liked to do things.
