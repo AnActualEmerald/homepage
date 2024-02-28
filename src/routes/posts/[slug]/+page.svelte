@@ -25,8 +25,14 @@
 	}
 
 	article {
-		width: 50%;
+		width: 80%;
 		height: auto;
+
+		:global(p) {
+			width: 100vw;
+			text-indent: 4ch;
+			margin-block: var(--size-2);
+		}
 
 		.title {
 			text-transform: capitalize;

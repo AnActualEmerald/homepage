@@ -1,5 +1,3 @@
-// @import '@fontsource/roboto';
-// @import '@fontsource/space-mono';
 
 // -- varaibles --//
 html {
@@ -9,53 +7,40 @@ html {
 
 
     // -- light -- //
-    --brand-light: var(--green-10-hsl);
+    --brand-light: var(--green-4);
+    --brand-2-light: var(--green-5);
     --text-1-light: var(--gray-11);
     --text-2-light: var(--gray-10);
 
-    --surface-1-light: var(--gray-0);
-    --surface-2-light: var(--gray-1);
-    --surface-3-light: var(--gray-2);
-    --surface-4-light: var(--gray-3);
+    --surface-1-light: var(--gray-2);
+    --surface-2-light: var(--gray-3);
+    --surface-3-light: var(--gray-4);
+    --surface-4-light: var(--gray-5);
 
     --border-light: var(--gray-4);
 
 
     // -- dark -- //
-    --brand-dark: var(--green-4);
+    --brand-dark: var(--green-8);
+    --brand-2-dark: var(--green-9);
     --text-1-dark: var(--gray-3);
     --text-2-dark: var(--gray-4);
 
-    --surface-1-dark: var(--gray-11);
-    --surface-2-dark: var(--gray-10);
-    --surface-3-dark: var(--gray-9);
-    --surface-4-dark: var(--gray-8);
+    --surface-1-dark: var(--gray-9);
+    --surface-2-dark: var(--gray-8);
+    --surface-3-dark: var(--gray-7);
+    --surface-4-dark: var(--gray-6);
 
     --border-dark: var(--gray-7);
 
 }
 
 // -- light theme -- //
-@media(prefers-color-scheme: light) {
-    :root {
-        color-scheme: light;
+[color-scheme="light"] {
+    color-scheme: light;
 
-        --brand: var(--brand-light-hsl);
-        --text-1: var(--text-1-light);
-        --text-2: var(--text-2-light);
-
-        --surface-1: var(--surface-1-light);
-        --surface-2: var(--surface-2-light);
-        --surface-3: var(--surface-3-light);
-        --surface-4: var(--surface-4-light);
-
-        --border: var(--border-light);
-    }
-}
-
-
-[color-cheme="light"] {
     --brand: var(--brand-light);
+    --brand-2: var(--brand-2-light);
     --text-1: var(--text-1-light);
     --text-2: var(--text-2-light);
 
@@ -68,25 +53,11 @@ html {
 }
 
 // -- dark theme -- //
-:root {
+[color-scheme="dark"] {
     color-scheme: dark;
 
     --brand: var(--brand-dark);
-    --text-1: var(--text-1-dark);
-    --text-2: var(--text-2-dark);
-
-    --surface-1: var(--surface-1-dark);
-    --surface-2: var(--surface-2-dark);
-    --surface-3: var(--surface-3-dark);
-    --surface-4: var(--surface-4-dark);
-
-    --border: var(--border-dark);
-
-}
-
-
-[color-scheme="dark"] {
-    --brand: var(--brand-dark);
+    --brand-2: var(--brand-2-dark);
     --text-1: var(--text-1-dark);
     --text-2: var(--text-2-dark);
 
@@ -106,7 +77,14 @@ body {
     font-family: var(--font-sans);
     color: var(--text-1);
     background-color: var(--surface-1);
+    align-content: var(--brand);
 }
+
+// body {
+//     background-image: url('/geom-green.jpg');
+//     background-attachment: fixed;
+//     background-position: center;
+// }
 
 ul,
 ol {
@@ -169,6 +147,7 @@ a {
     }
 
     p {
+        width: 100%;
         text-indent: 4ch;
         margin-block: var(--size-2)
     }

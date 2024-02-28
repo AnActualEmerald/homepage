@@ -7,6 +7,22 @@
 
 	import '../app.scss';
 	import Header from '$lib/Header.svelte';
+	import Footer from '$lib/Footer.svelte';
+	import { onMount } from 'svelte';
+	import { theme } from '$lib/utils';
+	import { browser } from '$app/environment';
+
+	onMount(() => {
+		if(browser){
+			const preferred = localStorage.getItem("color-scheme");
+			const dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+			$theme = preferred ? preferred as 'dark' | 'light' : dark ? 'dark' : 'light';
+		}
+
+		theme.subscribe((col) => {
+			document.querySelector('html')?.setAttribute('color-scheme', col);
+		})
+	});
 </script>
 
 <div class="layout">
@@ -15,6 +31,8 @@
 	<main>
 		<slot />
 	</main>
+
+	<Footer />
 </div>
 
 <style lang="scss">

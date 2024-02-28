@@ -1,3 +1,5 @@
+import { writable, type Writable } from "svelte/store"
+
 type DateStyle = Intl.DateTimeFormatOptions['dateStyle']
 
 export function formatDate(date: string, dateStyle: DateStyle = 'medium', locales = 'en') {
@@ -6,3 +8,5 @@ export function formatDate(date: string, dateStyle: DateStyle = 'medium', locale
     const dateFormatter = new Intl.DateTimeFormat(locales, { dateStyle })
     return dateFormatter.format(dateToFormat)
 }
+
+export const theme: Writable<'dark' | 'light'> = writable('dark');

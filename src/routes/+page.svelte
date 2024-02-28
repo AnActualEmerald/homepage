@@ -1,5 +1,5 @@
 <div class="hero">
-    
+    <img src="gem.png" alt="A green emerald-cut gem"/>
 </div>
 
 <style lang="scss">
