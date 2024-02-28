@@ -26,6 +26,7 @@ var config_default = defineConfig({
         ui: {
           defaultItem: {
             author: "Emerald",
+            showAuthor: false,
             draft: true,
             series: [],
             series_order: 0

@@ -7,6 +7,8 @@ series_order: 1
 tags:
   - Dungeons and Dragons
 author: Emerald
+date: 2024-02-19T20:48:01.732Z
+showDate: false
 draft: true
 ---
 
