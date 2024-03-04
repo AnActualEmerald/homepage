@@ -9,7 +9,7 @@ series_order: 2
 tags:
   - Dungeons and Dragons
 author: Emerald
-draft: true
+draft: false
 ---
 
 Iamennos knelt in the dirt outside the entrance of the prison, face turned skyward. Stars. Beautiful, countless stars set in a black, moonless sky. He trembled beneath that sky, naked and cold and covered in blood that was not his. Behind him tongues of flame lapped at the ceiling of the short earthen tunnel that lead to the entrance of the prison. There had been so much lamp oil in the store room he'd found...
@@ -32,8 +32,8 @@ Caythoanth tapped a claw on the stump, annoyed. "Ah" it said after a moment, "yo
 
 Iamennos looked over the parchment. It seemed so simple. *Too* simple. He met the dragon's hollow stare. "This can't be all there is, what's the catch?"
 
-Caythoanth scoffed. "You will find, boy, that I am a simple creature. I prefer the straight forward approach." The two headless soldiers grabbed him, their clammy hands firm as steel. He yelped, having forgotten them. He struggled against them as they wrenched his arms around, holding his right hand open over the contract. "The power I gave you tonight was a taste of what you will achieve as you prove yourself useful to me" Caythoanth said. The soldier on his right unsheathed a dagger. "You shall leave this place and make your way to the continent. Learn to fight, learn to wield my magic, and maybe learn to fucking read while you're at it." 
+Caythoanth scoffed. "You will find, boy, that I am a simple creature. I prefer the straight forward approach." The two headless soldiers grabbed him, their clammy hands firm as steel. He yelped, having forgotten them. He struggled against them as they wrenched his arms around, holding his right hand open over the contract. "The power I gave you tonight was a taste of what you will achieve as you prove yourself useful to me" Caythoanth said. The soldier on his right unsheathed a dagger. "You shall leave this place and make your way to the continent. Learn to fight, learn to wield my magic, and maybe learn to fucking read while you're at it."
 
 The soldier sliced his open palm, splattering blood onto the parchment. Iamennos' eyes went wide as he felt the pact bind itself to him, creeping vines tightening around his very soul. The parchment disappeared in a puff of mist and the two soldiers crumpled to the ground, dead for the second time tonight. He pressed his good hand into his palm but realized that the wound was gone, leaving only his blood, black in the darkness of the night. He looked up to find that Caythoanth too had disappeared, leaving him alone in the clearing.
 
-"A gift for you, to commemorate the forging of our pact" Caythoanth's voice said in his mind. A small crystal ball had appeared where the contract had been. It glowed faintly with an uneven light, pale green mist swirling and shimmering within it. Iamennos picked it up. It was warm to the touch and seemed to hum in his hand. An arcane focus. *His* arcane focus. He smiled. 
+"A gift for you, to commemorate the forging of our pact" Caythoanth's voice said in his mind. A small crystal ball had appeared where the contract had been. It glowed faintly with an uneven light, pale green mist swirling and shimmering within it. Iamennos picked it up. It was warm to the touch and seemed to hum in his hand. An arcane focus. *His* arcane focus. He smiled.
