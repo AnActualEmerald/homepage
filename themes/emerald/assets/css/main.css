@@ -171,10 +171,8 @@ main a {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-	justify-content: center;
 	margin-block: 2rem;
-	text-align: center;
-	visibility: hidden;
+	/* visibility: hidden; */
 }
 
 #webrings a {
@@ -185,7 +183,6 @@ main a {
 #webrings h3 {
 	font-size: 1rem;
 	text-transform: uppercase;
-	text-align: center;
 }
 
 .subtitle {
