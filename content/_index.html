@@ -1,20 +1,24 @@
 ---
 ---
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        /**@type {HTMLAudioElement} */
+        const audio = document.querySelector("#crank_dat");
+        console.log(audio);
+        if (audio) {
+            audio.volume = 0.07;
+        }
+    });
+</script>
 
 <div class="content">
 
-    <h2 style="text-align: center;">Abandon Hope, All Ye Who Enter Here</h2>
+    <h2 style="text-align: center;">Abandon Hope,<br />All Ye Who Enter Here</h2>
+    <audio autoplay loop volume src="crank_dat.mp3" id="crank_dat">
+        There should be funny Soulja Boy music playing
+    </audio>
 
-    <div id="services">
-        <header>
-            <h2>Things I'm doing</h2>
-            <!-- <p class="subtitle faded"><a href="mailto:emerald@emeraldgreen.dev">Email me</a> to get an account (I
-                reserve the right to deny without reason though lmao)</p> -->
-        </header>
-        <ul>
-            <li><a href="https://vertex.chat">Matrix homeserver</a></li>
-            <li><a href="https://mecha.garden">Sharkey instance</a></li>
-        </ul>
-    </div>
+
+    <img src="/shinji_crank.gif" alt="Shinji, crank that soulja boy" width="373px" height="498px" />
 
 </div>
