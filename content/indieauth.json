@@ -1,0 +1,6 @@
+{
+    "issuer": "https://greenboi.me/",
+    "authorization_endpoint": "https://emerald.greenboi.me",
+    "token_endpoint": "https://emerald.greenboi.me/token",
+    "code_challenege_methods_supported": ["S256"]
+}
