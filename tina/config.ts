@@ -1,12 +1,18 @@
 import { defineConfig } from "tinacms";
 
 // Your hosting provider likely exposes this as an environment variable
-const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
+const branch =
+  process.env.GITHUB_BRANCH ||
+  process.env.VERCEL_GIT_COMMIT_REF ||
+  process.env.HEAD ||
+  "main";
 
 export default defineConfig({
   branch,
-  clientId: "e083a343-dc33-46c8-a94e-d373424431f5", // Get this from tina.io
-  token: process.env.TINA_TOKEN, // Get this from tina.io
+  // Get this from tina.io
+  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
+  // Get this from tina.io
+  token: process.env.TINA_TOKEN,
 
   build: {
     outputFolder: "admin",
@@ -14,24 +20,23 @@ export default defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: "media",
+      mediaRoot: "",
       publicFolder: "static",
     },
   },
+  // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/schema/
   schema: {
     collections: [
       {
         name: "story",
         label: "Stories",
         path: "content/stories",
-        ui: {
-          defaultItem: {
-            author: 'Emerald',
-            showAuthor: false,
-            draft: true,
-            series: [],
-            series_order: 0,
-          }
+        defaultItem: {
+          author: 'Emerald',
+          showAuthor: false,
+          draft: true,
+          series: [],
+          series_order: 0,
         },
         fields: [
           {
@@ -81,14 +86,12 @@ export default defineConfig({
         name: "post",
         label: "Posts",
         path: "content/posts",
-        ui: {
-          defaultItem: {
-            author: 'Emerald',
-            date: new Date().toISOString(),
-            draft: true,
-            showDate: true,
-            showDateUpdated: true
-          }
+        defaultItem: {
+          author: 'Emerald',
+          date: new Date().toISOString(),
+          draft: true,
+          showDate: true,
+          showDateUpdated: true
         },
         fields: [
           {

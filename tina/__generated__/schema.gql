@@ -204,6 +204,7 @@ type Mutation {
   updateDocument(collection: String, relativePath: String!, params: DocumentUpdateMutation!): DocumentNode!
   deleteDocument(collection: String, relativePath: String!): DocumentNode!
   createDocument(collection: String, relativePath: String!, params: DocumentMutation!): DocumentNode!
+  createFolder(collection: String, relativePath: String!): DocumentNode!
   updateStory(relativePath: String!, params: StoryMutation!): Story!
   createStory(relativePath: String!, params: StoryMutation!): Story!
   updatePost(relativePath: String!, params: PostMutation!): Post!
