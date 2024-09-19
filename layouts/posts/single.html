@@ -1,0 +1,25 @@
+{{ define "main" }}
+  <section id="post">
+    <h1>{{ .Title }}</h1>
+    {{ with .Date }}
+    {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
+    {{ $dateHuman := . | time.Format ":date_long" }}
+    <div>
+    Brought to you by Emerald on
+    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    </div>
+    {{ end }}
+    {{ with .Params.Updated_At }}
+    <div>
+    {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
+    {{ $dateHuman := . | time.Format ":date_long" }}
+    Last updated at 
+    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    </div>
+    {{ end }}
+    <hr>
+    <article>
+      {{ .Content }}
+    </article>
+  </section>
+{{ end }}
