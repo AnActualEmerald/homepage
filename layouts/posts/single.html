@@ -17,6 +17,7 @@
     <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
     </div>
     {{ end }}
+    <p>{{ printf "~%d minute read" .ReadingTime}}</p>
     <hr>
     <article>
       {{ .Content }}
