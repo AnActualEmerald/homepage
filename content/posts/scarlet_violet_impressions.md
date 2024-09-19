@@ -1,6 +1,8 @@
 ---
 title: "Scarlet & Violet: First impressions"
 date: 2022-11-18T15:45:08-05:00
+showDate: true
+showComments: true
 draft: false
 categories: ["reviews"]
 ---
