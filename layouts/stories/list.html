@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section id="list" style="grid-area: content; padding-block: 2rem;">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content}}
+  <div class="subtitle faded">
+    {{ . }}
+  </div>
+  {{ end }}
+  <div>
+    {{ range .Pages.GroupByParam "series" }}
+    <div class="year">
+      <h2>{{ .Key | title }}
+      </h2>
+      <hr>
+    </div>
+    <ol class="previews">
+      {{ range .Pages.ByParam "series_order"}}
+      <li><a href="{{ .RelPermalink }}">
+          {{ .LinkTitle }}
+        </a>
+      </li>
+      {{ end }}
+    </ol>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

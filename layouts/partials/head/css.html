@@ -1,4 +1,5 @@
-{{- with resources.Get "css/main.css" }}
+{{ $opts := dict "inlineImports" false}}
+{{- with resources.Get "css/main.css" | postCSS $opts }}
 {{- if eq hugo.Environment "development" }}
 <link rel="stylesheet" href="{{ .RelPermalink }}">
 {{- else }}
