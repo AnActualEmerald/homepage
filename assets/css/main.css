@@ -306,7 +306,7 @@ del {
 }
 
 .year {
-	margin-block: 4rem;
+	margin-bottom: 4rem;
 	display: flex;
 	align-items: center;
 	min-width: 100%;
@@ -318,9 +318,18 @@ del {
 }
 
 /* story page styles */
+#list ol {
+	display: flex;
+	flex-direction: column;
+}
+
 #list ol a {
 	font-weight: var(--font-weight-7);
 	font-size: var(--font-size-5);
+}
+
+#list ol a:visited {
+	filter: brightness(80%);
 }
 
 #story {

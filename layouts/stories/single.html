@@ -5,5 +5,18 @@
   <article>
     {{ .Content }}
   </article>
+
+  {{ range .Site.Pages.ByParam "series" }}
+  {{ if eq .Key $.Params.series }}
+  {{ range .Pages.ByParam "series_order"}}
+  {{ if eq .Params.series_order (sub $.Params.series_order 1)}}
+  <a href="{{ .RelPermalink }}"> Previous </a>
+  {{ end}}
+  {{ if eq .Params.series_order (add $.Params.series_order 1)}}
+  <a href="{{ .RelPermalink }}"> Next </a>
+  {{ end}}
+  {{ end }}
+  {{ end }}
+  {{ end }}
 </section>
 {{ end }}
