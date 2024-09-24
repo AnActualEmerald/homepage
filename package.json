@@ -1,4 +1,5 @@
 {
+  "license": "UNLICENSED",
   "moduleResolution": "nodenext",
   "devDependencies": {
     "autoprefixer": "^10.4.20",

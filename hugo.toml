@@ -5,6 +5,8 @@ summaryLength = 10
 
 [taxonomies]
 series = 'series'
+tag = 'tags'
+category = 'categories'
 
 
 # [[params.webrings]]

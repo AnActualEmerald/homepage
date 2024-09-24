@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section style="grid-area: content">
+  <h1 class="title">{{ .Title }}</h1>
+
+  <ul class="terms">
+    {{ range .Data.Terms.ByCount }}
+    <li>
+      <a href="{{ .Page.RelPermalink }}"><h2>{{ .Page.LinkTitle }}</h2></a
+      ><span class="faded"> {{ .Count }} </span>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
