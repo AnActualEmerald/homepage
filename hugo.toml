@@ -1,8 +1,11 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
 title = 'Technically A Website'
-summaryLength = 10
+baseURL = 'https://greenboi.me'
+languageCode = 'en-us'
 enableRobotsTXT = true
+
+[params.author]
+email = 'emerald@emeraldgreen.dev'
+name = 'Emerald'
 
 [taxonomies]
 series = 'series'
