@@ -2,6 +2,7 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Technically A Website'
 summaryLength = 10
+enableRobotsTXT = true
 
 [taxonomies]
 series = 'series'

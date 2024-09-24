@@ -378,10 +378,19 @@ del {
   grid-template-rows: auto 1fr;
 }
 
-#story > h2 {
-  margin-block: 4rem;
+
+#story > h1 {
+  margin-top: 4rem;
   font-size: var(--font-size-8);
   justify-self: center;
+  text-align: center;
+}
+
+#story > h2{
+  justify-self: center;
+  text-align: center;
+  font-size: var(--font-size-4);
+  margin-block: 2rem;
 }
 
 #story article {
@@ -394,4 +403,20 @@ del {
 #story article > p {
   font-size: var(--font-size-4);
   text-indent: 2em;
+}
+
+#series-nav {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "previous . next";
+}
+
+#series-nav .previous {
+  grid-area: previous;
+}
+
+#series-nav .next {
+  justify-self: end;
+  grid-area: next;
 }

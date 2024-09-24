@@ -5,20 +5,6 @@
 {{ $rings := .Site.Param "webrings"}}
 <section id="webrings">
     <!-- I want to join webrings! Invite me please! -->
-    {{- if and $rings gt ($rings | len) 0 }}
-
-    <h3>webrings</h3>
-    <ul>
-        {{ range $rings }}
-        <li class="ring">
-            <a href="{{ .href }}" aria-label="{{ .name }}">
-                {{ .name | title }}
-            </a>
-        </li>
-        {{ end }}
-    </ul>
-
-    {{ end }}
 </section>
 
 {{ end }}
