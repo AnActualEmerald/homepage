@@ -1,28 +1,16 @@
 {
-  "name": "homepage",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/anactualemerald/homepage.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/anactualemerald/homepage/issues"
-  },
-  "homepage": "https://github.com/anactualemerald/homepage#readme",
-  "dependencies": {
-    "@tinacms/cli": "^1.6.1",
-    "tinacms": "^2.2.1"
-  },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+  "license": "UNLICENSED",
+  "moduleResolution": "nodenext",
   "devDependencies": {
-    "@types/node": "^22.5.2"
-  }
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "postcss-custom-media": "^11.0.1",
+    "postcss-import": "^16.1.0"
+  },
+  "dependencies": {
+    "open-props": "^1.7.6"
+  },
+  "type": "module",
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

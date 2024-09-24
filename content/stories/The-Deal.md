@@ -3,8 +3,7 @@ date: '2024-02-19T20:48:01.732Z'
 showDate: false
 showAuthor: false
 title: The Deal
-series:
-  - Iamennos
+series: Iamennos
 series_order: 2
 tags:
   - Dungeons and Dragons

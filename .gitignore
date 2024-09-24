@@ -1,5 +1,5 @@
 .vercel
 public
 node_modules
-
+resources/_gen
 .env

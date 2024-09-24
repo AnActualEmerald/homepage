@@ -1,13 +1,10 @@
-User-agent: GPTBot
-Disallow: /
-
-User-agent: ChatGPT-user
-Disallow: /
-
-User-agent: *
-{{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
-Allow: /
-{{- else }}
-Disallow: /
-{{- end }}
-Sitemap: {{ "sitemap.xml" | absURL }}
+{{ $url := "https://raw.githubusercontent.com/ai-robots-txt/ai.robots.txt/refs/heads/main/robots.txt" }}
+{{ with resources.GetRemote $url}}
+  {{ with .Err }}
+    {{ errorf "%s" . }}
+  {{ else }}
+    {{ .Content}}
+  {{ end }}
+{{ else }}
+ {{ errorf "Unable to get robots.txt from '%s'" $url }}
+{{ end }}

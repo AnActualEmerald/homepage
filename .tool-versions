@@ -1,4 +1,3 @@
 hugo latest
 nodejs 20
-pnpm latest
-yarn latest
+yarn 1.22

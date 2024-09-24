@@ -1,8 +1,7 @@
 ---
 showAuthor: false
 title: Iamennos of the Black Isles
-series:
-  - Iamennos
+series: Iamennos
 series_order: 1
 tags:
   - Dungeons and Dragons

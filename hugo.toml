@@ -1,0 +1,18 @@
+title = 'Technically A Website'
+baseURL = 'https://greenboi.me'
+languageCode = 'en-us'
+enableRobotsTXT = true
+
+[params.author]
+email = 'emerald@emeraldgreen.dev'
+name = 'Emerald'
+
+[taxonomies]
+series = 'series'
+tag = 'tags'
+category = 'categories'
+
+
+# [[params.webrings]]
+# name = "example webring"
+# href = "https://example.com"

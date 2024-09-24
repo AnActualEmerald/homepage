@@ -1,0 +1,32 @@
+{{ define "main" }}
+<section id="list" style="grid-area: content; padding-block: 2rem">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content}}
+  <div class="subtitle faded">{{ . }}</div>
+  {{ end }}
+  <div>
+    {{ range .Pages.GroupByDate "2006" }}
+    <div class="year">
+      <h2>{{ .Key }}</h2>
+      <hr />
+    </div>
+    <div class="previews">
+      {{ range .Pages }}
+      <a class="preview card" href="{{ .RelPermalink }}">
+        <h3>{{ .LinkTitle }}</h3>
+        {{ with .Date }} {{ $dateMachine := . | time.Format
+        "2006-01-02T15:04:05-07:00" }} {{ $dateHuman := . | time.Format
+        ":date_long" }}
+        <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+        {{ end }}
+        <!-- <section id="summary"> -->
+        <!-- {{ .Summary | truncate 250 }} -->
+        <!-- </section> -->
+      </a>
+
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

@@ -6,13 +6,7 @@
     {{ . }}
   </div>
   {{ end }}
-  <div>
-    {{ range .Pages.GroupByParam "series" }}
-    <div class="year">
-      <h2>{{ .Key | title }}
-      </h2>
-      <hr>
-    </div>
+  <div style="margin-top: 4rem;">
     <ol class="previews">
       {{ range .Pages.ByParam "series_order"}}
       <li><a href="{{ .RelPermalink }}">
@@ -21,7 +15,6 @@
       </li>
       {{ end }}
     </ol>
-    {{ end }}
   </div>
 </section>
 {{ end }}

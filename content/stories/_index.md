@@ -1,6 +1,4 @@
 ---
-showCards: false
-# groupByYear: false
+title: Short Stories
 ---
-
-Short stories and various fiction writing
+and various fiction writing
