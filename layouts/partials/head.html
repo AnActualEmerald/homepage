@@ -5,6 +5,8 @@
 <meta name="og:site_name" content="{{ site.Title }}">
 <meta name="og:title" content="{{ site.Title }}">
 
+<link rel="me" href="https://mecha.garden/@emerald" />
+
 {{ with .OutputFormats.Get "rss" -}}
 <!--prettier-ignore-->
 {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
