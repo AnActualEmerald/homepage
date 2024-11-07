@@ -1,6 +1,10 @@
 {{ define "main" }}
 
-{{ .Content }}
+<div class="content">
+    {{ .Content }}
+</div>
+
+{{ partial "recent.html" .}}
 
 {{ $rings := .Site.Param "webrings"}}
 <section id="webrings">

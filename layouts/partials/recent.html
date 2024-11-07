@@ -1,0 +1,16 @@
+<div class="recents">
+    {{ range .Site.Sections }}
+        <div class="recent-{{ .LinkTitle | lower }}">
+            <h3><a href="{{ .RelPermalink }}">Recent {{ .LinkTitle }}</a></h3>
+            {{ range .Pages.ByDate }}
+                <a class="preview" href="{{ .RelPermalink }}">
+                    <h4>{{ .LinkTitle }}</h4>
+                    <span> {{ .Date | time.Format ":date_medium" }}</span>
+                    {{ .Summary }}
+                </a>
+            {{ else }}
+                <p class="ghost">There's nothing here...</p>
+            {{ end }}
+        </div>
+    {{ end }}
+</div>

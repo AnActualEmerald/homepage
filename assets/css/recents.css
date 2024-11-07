@@ -1,0 +1,9 @@
+.recents {
+    grid-area: content;
+    display: grid;
+    grid-cols: 1;
+}
+
+.recents.preview {
+    
+}
