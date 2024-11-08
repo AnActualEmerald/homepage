@@ -2,9 +2,11 @@
 
 <div class="content">
     {{ .Content }}
-</div>
 
 {{ partial "recent.html" .}}
+
+</div>
+
 
 {{ $rings := .Site.Param "webrings"}}
 <section id="webrings">
