@@ -1,0 +1,24 @@
+<div class="recents">
+    {{ range .Site.Sections }}
+        {{ $cutoff := time.Now.AddDate -1 0 0 }}
+        {{ $validPages := where .Pages "Date" "gt" $cutoff }}
+        {{ if eq $validPages.Len 0 }}
+            {{ continue }}
+        {{ end }}
+        <div class="recent-group" id="recent-{{ .LinkTitle | lower }}">
+            <h3><a href="{{ .RelPermalink }}">Recent {{ .LinkTitle }}</a></h3>
+            <div class="recent-previews">
+                {{ range $validPages.ByDate.Reverse.Limit 5 }}
+                    <a class="preview card" href="{{ .RelPermalink }}">
+                        <h4>{{ .LinkTitle }}</h4>
+                        <p> {{ .Date | time.Format ":date_medium" }}</p>
+                        <p> {{ printf "~%d minute read" .ReadingTime }}</p>
+                    </a>
+                {{ else }}
+                    <p class="ghost">There's nothing here...</p>
+                {{ end }}
+            </div>
+
+        </div>
+    {{ end }}
+</div>

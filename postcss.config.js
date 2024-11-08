@@ -7,7 +7,7 @@ export default {
   plugins : [
     postcssImport({
       from: cwd() + "/assets/css/main.css",
-      path: [cwd() + "/node_modules"]
+      path: [cwd() + "/assets/css", cwd() + "/node_modules"]
     }),
     autoprefixer,
     customMedia,
