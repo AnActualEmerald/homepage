@@ -1,7 +1,7 @@
 +++
 title = "Bevy's kids annoy me"
 date = 2024-12-24T09:50:56-05:00
-draft = true
+draft = false
 categories = ['tech']
 tags = ['game dev', 'bevy']
 +++
