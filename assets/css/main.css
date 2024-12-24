@@ -46,6 +46,11 @@ header {
   padding: var(--padding);
 }
 
+pre {
+  padding: var(--size-2);
+  border-radius: var(--rounded);
+}
+
 nav {
   display: grid;
   position: relative;
@@ -386,4 +391,3 @@ del {
   border-radius: var(--rounded);
   text-transform: lowercase;
 }
-
