@@ -2,7 +2,7 @@ title = 'Technically A Website'
 baseURL = 'https://greenboi.me'
 languageCode = 'en-us'
 enableRobotsTXT = true
-copyright = "©2024 Emerald"
+copyright = "©2025 Emerald"
 
 [params.author]
 email = 'emerald@emeraldgreen.dev'

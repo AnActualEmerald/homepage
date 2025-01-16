@@ -1,7 +1,8 @@
----
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-showDate: false
-showAuthor: false
-draft: true
----
++++
+title = "{{ replace .Name "-" " " | title }}"
+date = "{{ .Date }}"
+tags = []
+series = ""
+series_order = 0
+draft = true
++++

@@ -16,7 +16,7 @@
   {{ range (.GetTerms "series") }}
   {{ $pageReached := false }}
   {{ $next := false }}
-  {{ range .Pages }}
+  {{ range .Pages.ByParam "series_order" }}
     {{ if not $next}}
         {{ if $pageReached }}
             {{ $next = . }}
@@ -27,7 +27,7 @@
   {{ end }}
   {{ $pageReached = false }}
   {{ $prev := false }}
-  {{ range .Pages.Reverse }}
+  {{ range (.Pages.ByParam "series_order").Reverse }}
     {{ if not $prev}}
         {{ if $pageReached }}
             {{ $prev = . }}
@@ -38,7 +38,7 @@
   {{ end }}
   <div id="series-nav">
     {{ with $prev }}
-    <div class="previous" style="text-align: right">
+    <div class="previous" style="text-align: left">
       <p class="faded">Previous in series:</p>
       <a href="{{ .RelPermalink }}"> {{ .LinkTitle }} </a>
     </div>
