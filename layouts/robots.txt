@@ -1,10 +1,5 @@
-{{ $url := "https://raw.githubusercontent.com/ai-robots-txt/ai.robots.txt/refs/heads/main/robots.txt" }}
-{{ with resources.GetRemote $url}}
-  {{ with .Err }}
-    {{ errorf "%s" . }}
-  {{ else }}
-    {{ .Content}}
-  {{ end }}
-{{ else }}
- {{ errorf "Unable to get robots.txt from '%s'" $url }}
-{{ end }}
+User-agent: MojeekBot
+Allow: /
+
+User-agent: *
+Disallow: /

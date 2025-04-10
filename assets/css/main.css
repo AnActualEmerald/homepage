@@ -1,15 +1,11 @@
-@import "open-props/media.min.css";
+@import "open-props/normalize.min.css";
+
+
 /* story page styles */
 @import "stories.css";
 /* extra styles for the recent posts previews */
 @import "recents.css";
 
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-}
 
 html {
   --padding: 1rem;
@@ -241,9 +237,14 @@ main>section {
 footer {
   padding: var(--size-4);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-inline: var(--size-6);
+  grid-template-columns: 1fr auto 1fr;
+  /* margin-inline: var(--size-6); */
   align-self: end;
+}
+
+footer #license * {
+  font-size: var(--font-size-1);
+  
 }
 
 footer * {
@@ -391,3 +392,4 @@ del {
   border-radius: var(--rounded);
   text-transform: lowercase;
 }
+

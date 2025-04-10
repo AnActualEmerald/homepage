@@ -1,5 +1,4 @@
-{{ $opts := dict "inlineImports" false}}
-{{- with resources.Get "css/main.css" | postCSS $opts }}
+{{- with resources.Get "css/main.css" | postCSS }}
 {{- if eq hugo.Environment "development" }}
 <link rel="stylesheet" href="{{ .RelPermalink }}">
 {{- else }}
@@ -8,5 +7,3 @@
 {{- end }}
 {{- end }}
 {{- end }}
-
-{{ partialCached "head/open-props.html" . }}
