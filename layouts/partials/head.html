@@ -7,6 +7,10 @@
 
 <link rel="me" href="https://mecha.garden/@emerald" />
 
+<!--indieauth endpoints-->
+<link rel="authorization_endpoint" href="https://emerald.greenboi.me" />
+<link rel="token_endpoint" href="https://emerald.greenboi.me/token" />
+
 {{ with .OutputFormats.Get "rss" -}}
 <!--prettier-ignore-->
 {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
