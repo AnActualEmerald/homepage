@@ -1,6 +1,6 @@
 {{ define "main" }}
-<section id="story">
-  <h1 id="centered">{{ .Title }}</h1>
+<section id="story" class="h-entry">
+  <h1 id="centered" class="p-name">{{ .Title }}</h1>
   {{ range (.GetTerms "series") }}
   {{ $series := . }}
   {{ with $.Params.series_order }}
@@ -9,7 +9,7 @@
   {{ end }}
   {{ end }}
 
-  <article>{{ .Content }}</article>
+  <article class="e-content">{{ .Content }}</article>
 
   <hr style="margin-block: 2rem;"/>
 

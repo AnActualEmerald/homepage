@@ -1,31 +1,39 @@
 {{ define "main" }}
-<section id="post">
-  <h1>{{ .Title }}</h1>
+<section id="post" class="h-entry">
+  <h1 class="p-name">{{ .Title }}</h1>
   {{ with .Date }} 
   {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }} 
   {{ $dateHuman := . | time.Format ":date_long"  }}
-  <div>
-    Brought to you by Emerald on
-    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+  <div class="author">
+    <span class="p-author h-card">
+      Written by 
+      <a class="u-url" href="{{ absURL "" }}">
+        <img class="u-photo" src="https://seccdn.libravatar.org/avatar/{{sha256 "emerald@mecha.garden"}}"/>
+        <span class="p-name" >Emerald</span>
+      </a>
+      </span>
+    <time class="dt-published" datetime="{{ $dateMachine }}">Published {{ $dateHuman }}</time>
+    {{ with page.Params.Updated_At }}
+    <div>
+      {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }} {{
+      $dateHuman := . | time.Format ":date_long" }} Last updated at
+      <time class="dt-updated" datetime="{{ $dateMachine }}">Updated {{ $dateHuman }}</time>
+    </div>
+    {{ end }}
   </div>
   {{ end }} 
-  {{ with .Params.Updated_At }}
-  <div>
-    {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }} {{
-    $dateHuman := . | time.Format ":date_long" }} Last updated at
-    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+  <div class="extra">
+    <p class="faded">{{ printf "~%d minute read" .ReadingTime}}</p>
+    {{ with .GetTerms "tags"}}
+    <ul id="tags" class="p-category">
+      {{ range . }}
+      <li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
+      {{ end }}
+    </ul>
   </div>
   {{ end }}
-  <p>{{ printf "~%d minute read" .ReadingTime}}</p>
-  {{ with .GetTerms "tags"}}
-  <ul id="tags">
-    {{ range . }}
-    <li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
-    {{ end }}
-  </ul>
-  {{ end }}
   <hr />
-  <article>{{ .Content }}</article>
+  <article class="e-content">{{ .Content }}</article>
   <hr />
 </section>
 {{ end }}
