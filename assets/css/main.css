@@ -108,6 +108,7 @@ nav a {
 #links li {
   display: flex;
   list-style: none;
+  width: 100%;
   flex: 1;
 }
 
@@ -226,6 +227,10 @@ div.author {
 #services ul {
   display: grid;
   gap: 2em;
+
+  li {
+    min-width: 100%;
+  }
 }
 
 #services ul li {
