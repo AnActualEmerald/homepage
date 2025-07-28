@@ -1,18 +1,27 @@
 import autoprefixer from 'autoprefixer';
 import customMedia from 'postcss-custom-media';
 import postcssImport from 'postcss-import';
-import postcssJitProps from 'postcss-jit-props';
-import OpenProps from 'open-props';
+import { purgeCSSPlugin } from '@fullhuman/postcss-purgecss';
 import { cwd } from 'node:process';
 
 export default {
-  plugins : [
+  plugins: [
     postcssImport({
       from: cwd() + "/assets/css/main.css",
       path: [cwd() + "/assets/css", cwd() + "/node_modules"]
     }),
-    postcssJitProps(OpenProps),
-    autoprefixer,
-    customMedia,
+    autoprefixer(),
+    customMedia(),
+
+    ...(
+      process.env.HUGO_ENVIRONMENT === "production" ? [
+        purgeCSSPlugin({
+          content: ["./hugo_stats.json"],
+          defaultExtractor: (content) => {
+            const els = JSON.parse(content).htmlElements;
+            return [...(els.tags || []), ...(els.classes || []), ...(els.ids || [])];
+          }
+        })] : []
+    )
   ]
 }

@@ -16,3 +16,19 @@ category = 'categories'
 # [[params.webrings]]
 # name = "example webring"
 # href = "https://example.com"
+
+
+[build.buildStats]
+enable = true
+
+[module.hugoVersion]
+extended = false
+min = "0.148.0"
+
+[[module.mounts]]
+source = "assets"
+target = "assets"
+
+[[module.mounts]]
+source = "hugo_stats.json"
+target = "assets/watching/hugo_stats.json"
