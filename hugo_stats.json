@@ -17,6 +17,7 @@
       "header",
       "hr",
       "html",
+      "img",
       "li",
       "link",
       "main",
@@ -34,11 +35,20 @@
       "ul"
     ],
     "classes": [
+      "author",
       "card",
       "content",
+      "dt-published",
+      "e-content",
+      "extra",
       "faded",
+      "h-card",
+      "h-entry",
       "highlight",
       "next",
+      "p-author",
+      "p-category",
+      "p-name",
       "preview",
       "previews",
       "previous",
@@ -48,6 +58,8 @@
       "subtitle",
       "terms",
       "title",
+      "u-photo",
+      "u-url",
       "year"
     ],
     "ids": [

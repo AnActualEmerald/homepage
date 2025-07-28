@@ -132,12 +132,12 @@ main {
     ". content .";
 }
 
-@media (--lg-n-above) {
-  main {
-    grid-template-columns: 10% 1fr 10%;
-    grid-template-areas: "left content right";
-  }
-}
+/* @media (--lg-n-above) { */
+/* main { */
+/* grid-template-columns: 10% 1fr 10%; */
+/* grid-template-areas: "left content right"; */
+/* } */
+/* } */
 
 main div.content {
   grid-area: content;
