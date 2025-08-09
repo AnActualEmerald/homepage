@@ -1,0 +1,28 @@
+.warning {
+  display: flex;
+  border-bottom-right-radius: var(--rounded);
+  border-top-right-radius: var(--rounded);
+  background: linear-gradient(to right, transparent, rgb(from var(--yellow-5) r g b / 0.5), rgb(from var(--yellow-5) r g b / 0.5));
+  /* border: 2px solid var(--yellow-6); */
+  border-left: none;
+  padding: var(--padding);
+  margin-block: var(--padding);
+  gap: var(--padding);
+  align-items: center;
+  justify-content: space-between;
+  min-width: fit-content;
+  /* align-self: center; */
+
+  svg {
+    aspect-ratio: var(--ratio-square);
+    block-size: 2em;
+    color: var(--yellow-6);
+  }
+
+  span {
+    align-content: center;
+    color: var(--gray-10);
+    font-weight: bold;
+  }
+
+}

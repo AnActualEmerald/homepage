@@ -32,6 +32,7 @@ html {
 }
 
 html {
+  --brand: var(--main-1);
   background: var(--body-bg);
 }
 
