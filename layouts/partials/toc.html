@@ -1,0 +1,8 @@
+{{ if not (and (isset .Page.Params "showtoc") (not .Page.Params.showToc))  }}
+<details id="toc">
+  <summary>Table of Contents</summary>
+
+  {{ .TableOfContents | emojify }}
+
+</details>
+{{ end }}

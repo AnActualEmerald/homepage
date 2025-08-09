@@ -373,6 +373,39 @@ footer a {
   max-width: max-content;
 }
 
+#toc {
+  margin-top: var(--padding);
+
+  #TableOfContents {
+    background-color: inherit;
+    display: block;
+    padding: 0;
+
+    a {
+      color: inherit;
+    }
+
+    ul {
+      padding-left: var(--padding);
+      list-style: square;
+
+      li {
+        padding-block: calc(var(--padding) / 2);
+
+        li::marker {
+          content: "⤷";
+          font-size: 1em;
+        }
+
+        &::marker {
+          /* content: "⬣ "; */
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
+
 del {
   color: inherit;
   background-color: inherit;

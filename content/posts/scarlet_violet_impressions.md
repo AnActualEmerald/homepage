@@ -12,7 +12,7 @@ Pokémon Scarlet and Violet are games that I've been ~~morbidly~~ looking forwar
 Now we've waited, and so it's time to see. This will be my very first impressions of the game (I'm playing Violet) after about an hour of play. I've been taking my time and so haven't gotten very deep into the story yet, but I feel like I've gotten a good look at the most basic pieces that make up the rest of the game. That said, let’s start with:
 
 
-## 1. The good
+## The good
 
 Right off the bat, this generation introduces you to the game with a fully animated cutscene. It's dynamic, and shows off something that I think these games have going for them: character expressions. This isn't the usual Pokémon affair of characters awkwardly walking, turning, walking again, then doing a canned animation sequence. While there is some of that in the game itself, the intro has real animation, with characters that really react to what they're seeing in a believable way, and a way that adds to their characterization. There *are* issues with the cutscenes but we'll get to that later. 
 
@@ -21,14 +21,14 @@ Continuing with the theme of improved animations, your selection of partner Pok�
 Another thing this gen gets right is character customization. This has been an inclusion since Sword and Shield of course, but Scarlet and Violet starts off with character creation heretofore unseen in a Pokémon game. You can change your eye shape and color, lash shape and color, brow shape and color, mouth shape and lip color, skin tone, hair color and style, and even chose from a few different beauty marks. All of the choices even have a decent number of options as well, a few more than seen in previous iterations of the same system. I assume you are able to customize your clothing too, though I haven't gotten far enough for that yet as you start out in your school uniform.
 
 
-## 2. The meh
+## The meh
 
 Somewhat alarmingly I have yet to mention anything to do with the actual gameplay. This is largely because these games, like so many before them, are Pokémon games. Now it should be noted that Scarlet and Violet are true open world games, not confining the player to a single quest line or forcing you down a single path to progress. You can walk around, fall off things, find items and berries lying on the ground, and whatever else to your heart's content before the game even really starts. *But*, when it comes to the core gameplay (i.e. battles), it is much the same as it ever was. There are some improvements in this area: you aren't transported to a pocket dimension during a battle, they happen right in the overworld with minimal transitions, there's a shortcut for getting to your pokéballs in wild Pokémon battles, and overall the battle interface looks pretty nice and is unobtrusive. But the battle styles from Arceus, which I thought added a lot of interest and opportunity for strategy, are gone, replaced by yet another mega-evolution knock-off (and a pretty silly looking one at that).
 
 Battle animations are also as "okay" as ever. For what they are, they're pretty good (for the new Pokémon at least) and continue the trend of more expressive animations across the board. But they are still the same as they have been since the switch to 3D. Because I haven't gotten very far I can't say whether or not there are any Mega Blastoise-level effect misalignments, but the animations I've seen so far certainly aren't tailored to the move that the Pokémon is doing. 
 
 
-## 3. The ugly
+## The ugly
 
 Time to address the Copperajah in the room. Graphically, the games are - **at best** - not much to look at. As far as I can tell, there is *no* anti-aliasing whatsoever, meaning that from the start there are ugly jagged edges and artifacts everywhere. I've only played on a Switch Lite, so it might be more noticeable than it would be otherwise, but that shouldn't really be an issue. There is also a lot of asset pop in, especially when looking around with the camera and in scenes where the camera jumps to a new position. The draw distance for static objects isn't bad, but distant terrain and trees tend to look more like lumps of colored clay. The other thing that really bothered me is that everything seems too bright, like the contrast is set too low with no way to change it, causing everything to seem blown out as if you just walked outside on a sunny day after being in a dark room for a few hours.
 
