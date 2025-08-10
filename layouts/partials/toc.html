@@ -1,4 +1,5 @@
-{{ if not (and (isset .Page.Params "showtoc") (not .Page.Params.showToc))  }}
+{{/* this renders the TOC only if it is not explicitly disabled and not empty */}}
+{{ if and (not (and (isset .Page.Params "showtoc") (not .Page.Params.showToc))) ( .TableOfContents | plainify )   }}
 <details id="toc">
   <summary>Table of Contents</summary>
 

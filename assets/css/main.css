@@ -355,26 +355,32 @@ footer a {
   grid-area: content;
   display: flex;
   flex-direction: column;
-}
 
-#post h1 {
-  margin-block: 2rem;
-  max-width: max-content;
-}
+  hr {
+    min-width: 100%;
+  }
 
-#post article {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
+  h1 {
+    margin-block: 2rem;
+    max-width: max-content;
+  }
 
-#post article * {
-  max-width: max-content;
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    * {
+      max-width: max-content;
+    }
+  }
+
 }
 
 #toc {
-  margin-top: var(--padding);
+  margin-top: calc(var(--padding) * 2);
+  margin-bottom: calc(var(--padding) * -1);
 
   #TableOfContents {
     background-color: inherit;
